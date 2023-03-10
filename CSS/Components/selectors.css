@@ -1,0 +1,28 @@
+.selector {
+    width: 27%;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.selector_title {
+    color: #ffffff; 
+    text-align: center; 
+    font-size: 1.5em;
+}
+
+.oneline {
+    line-height: 100px;
+}
+
+.twolines {
+    padding-top: 12%;
+}
+
+.selectable {
+    display: none;
+}

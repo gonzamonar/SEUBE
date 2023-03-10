@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap');
+
+* {
+    color: #404040;
+    font-family: 'Source Sans Pro', 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+a {
+    color: red;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+h3 {
+    background: none !important;
+    border-bottom: 1px solid #404040 !important;
+    font-family: 'Source Sans Pro', 'Franklin Gothic Medium', Arial, sans-serif;
+}
