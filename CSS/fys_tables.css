@@ -1,0 +1,25 @@
+
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    background-color: #594745;
+    color: #fff;
+    border: 1px solid black;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
