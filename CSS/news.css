@@ -2,3 +2,11 @@ body {
     color: #404040;
     font-family: Cambria, serif;
 }
+
+a {
+    color: #ff0000;
+}
+
+p .selector {
+    color: #d9d9d9;
+}
