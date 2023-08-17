@@ -10,16 +10,18 @@ table {
 }
 
 th {
-    background-color: #594745;
+    background-color: #c3595e;
     color: #fff;
-    border: 1px solid black;
+    border: 1px solid #404040;
+    border-radius: 5px;
     padding: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 td {
-    border: 1px solid black;
+    border: 1px solid #404040;
+    border-radius: 5px;
     padding: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
