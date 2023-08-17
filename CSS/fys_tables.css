@@ -4,6 +4,7 @@ table {
     border: 1px solid #404040;
     border-collapse: collapse;
     border-radius: 5px;
+    margin-bottom: 40px;
     font-size: 15px !important;
     table-layout: fixed;
     width: 100%;
