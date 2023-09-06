@@ -28,6 +28,20 @@ class Curso {
 	getMonth(){
 		return this.inicio == "A Confirmar" ? "PRÓXIMAMENTE" : this.inicio.split(' ').slice(-1)[0].toUpperCase() ;
 	}
+
+	function getTop(){
+	let brCount = (this.titulo.match(new RegExp("<br\/>", "g"))||[]).length;
+	let top = "30.5px";
+	switch(brCount){
+		case 1:
+			top = "44.5px";
+			break;
+		case 2:
+			top = "60.5px";
+			break;
+		}
+	return top;
+	}
 }
 
 
@@ -58,7 +72,7 @@ async function InitCourses(){
 	let json_file = await FetchDataAsync('https://gonzamonar.github.io/SEUBE/cursos.json');
 	let cursos = ParseJson(json_file);
     	cursos.forEach(curso => {
-        		DrawHeader(curso);
+		DrawHeader(curso);
    	});
 }
 
@@ -76,8 +90,8 @@ function DrawHeader(curso){
 		header_div.className = "course_heading virtual";
 	}
 
-	header_div.addEventListener("mouseOver", transpIn);
-	header_div.addEventListener("mouseOut", transpOut);
+	header_div.addEventListener("mouseover", transpIn);
+	header_div.addEventListener("mouseout", transpOut);
 
 	let slash_div = document.createElement("div");
 	CreateParagraph("course_info", "CURSO Nº"+curso.n, slash_div);
@@ -89,8 +103,9 @@ function DrawHeader(curso){
 	
 	let plus_img = document.createElement("img");
 	plus_img.setAttribute("id", idPlus);
-	plus_img.className = "fixed";
-	plus_img.style = "top: "+ curso.top + ";";
+	plus_img.className = "img_plus deploy";
+	plus_img.style = "top: "+ curso.getTop() + ";";
+	header_div.appendChild(plus_img);
 
 	$("courseBlock").appendChild(header_div);
 }
@@ -134,13 +149,13 @@ function mouseOut(x) {
 	x.style.border = "2px solid #A37B75";
 }
 
-function transpIn(item, opacity="0.82") {
-	item.style.cursor = "pointer";
-	item.style.opacity = opacity;
+function transpIn(e, opacity = "0.82") {
+	e.currentTarget.style.cursor = "pointer";
+	e.currentTarget.style.opacity = opacity;
 }
 
-function transpOut(item) {
-	item.style.opacity = "1";
+function transpOut(e) {
+	e.currentTarget.style.opacity = "1";
 }
 
 const fixed_items = document.getElementsByClassName('img_plus');
