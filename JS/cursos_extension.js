@@ -136,11 +136,11 @@ function BuildLeftColumn(parent, curso){
 	leftCol.className = "left_column";
 	
 	CreateField(leftCol, "", "CURSO Nº"+curso.n, false, "course_number");
-	CreateField(leftCol, "DOCENTE", curso.docente));
-	CreateField(leftCol, "FECHA DE INICIO", curso.inicio));
-	CreateField(leftCol, "FECHA DE FINALIZACIÓN", curso.fin));
-	CreateField(leftCol, "DÍA Y HORARIO", curso.horario));
-	CreateField(leftCol, "ARANCEL", "Gratuito"));
+	CreateField(leftCol, "DOCENTE", curso.docente);
+	CreateField(leftCol, "FECHA DE INICIO", curso.inicio);
+	CreateField(leftCol, "FECHA DE FINALIZACIÓN", curso.fin);
+	CreateField(leftCol, "DÍA Y HORARIO", curso.horario);
+	CreateField(leftCol, "ARANCEL", "Gratuito");
 	body_div.appendChild(leftCol);
 }
 
