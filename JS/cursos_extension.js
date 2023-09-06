@@ -52,6 +52,18 @@ async function FetchDataAsync(url) {
 }
 
 
+function $(id){
+	return document.getElementById(id);
+}
+
+
+function ToggleClass(element, classname){
+	if(element != null) {
+	element.classList.toggle(classname);
+	}
+}
+
+
 function ParseJson(json){
     let items = [];
     json.forEach(e => {
@@ -63,11 +75,6 @@ function ParseJson(json){
 }
 
 
-function $(id){
-    return document.getElementById(id);
-}
-
-
 async function InitCourses(){
 	let json_file = await FetchDataAsync('https://gonzamonar.github.io/SEUBE/cursos.json');
 	let cursos = ParseJson(json_file);
@@ -75,6 +82,7 @@ async function InitCourses(){
 		DrawCourse(curso);
    	});
 }
+
 
 function DrawCourse(curso){
 	let header = DrawHeader(curso);
@@ -118,6 +126,7 @@ function DrawHeader(curso){
 	return header_div;
 }
 
+
 function DrawBody(curso){
 	let idCurso = 'curso' +curso.n;
 
@@ -130,6 +139,7 @@ function DrawBody(curso){
 	
 	return body_div;
 }
+
 
 function BuildLeftColumn(parent, curso){
 	let leftCol = document.createElement("div");
@@ -144,6 +154,7 @@ function BuildLeftColumn(parent, curso){
 	body_div.appendChild(leftCol);
 }
 
+
 function BuildRightColumn(parent, curso){
 	let rightCol = document.createElement("div");
 	rightCol.className = "right_column";
@@ -153,6 +164,7 @@ function BuildRightColumn(parent, curso){
 	
 	body_div.appendChild(rightCol);
 }
+
 
 function CreateButton(parent, link="http://seube.filo.uba.ar/inscribite", tag="Inscribirse"){
 	let btn_div = document.createElement("div");
@@ -168,6 +180,7 @@ function CreateButton(parent, link="http://seube.filo.uba.ar/inscribite", tag="I
 
 	parent.appendChild(btn_div);
 }
+
 
 function CreateField(parent, fieldtitle, fieldcontent, hastitle=true, contentClass="fieldcontent", titleClass="fieldtitle"){
 	let field_div = document.createElement("div");
@@ -188,6 +201,7 @@ function CreateField(parent, fieldtitle, fieldcontent, hastitle=true, contentCla
 	parent.appendChild(field_div);
 }
 
+
 function CreateParagraph(classname, textNode, parent){
 	let p_element = document.createElement("p");
 	p_element.className = classname;
@@ -195,12 +209,14 @@ function CreateParagraph(classname, textNode, parent){
 	parent.appendChild(p_element);
 }
 
+
 function CreateParagraphInnerHTML(classname, textNode, parent){
 	let p_element = document.createElement("p");
 	p_element.className = classname;
 	p_element.innerHTML = textNode;
 	parent.appendChild(p_element);
 }
+
 
 function desplegar(a,b) {
         view=$(a).style.display;
@@ -217,24 +233,28 @@ function desplegar(a,b) {
 }
 
 
-function mouseOver(x) {
-	x.style.backgroundColor = "#7aba53";
-	x.style.border = "2px solid #7aba53";
+function mouseOver(item) {
+	item.style.backgroundColor = "#7aba53";
+	item.style.border = "2px solid #7aba53";
 }
 
-function mouseOut(x) {
-	x.style.backgroundColor = "#A37B75";
-	x.style.border = "2px solid #A37B75";
+
+function mouseOut(item) {
+	item.style.backgroundColor = "#A37B75";
+	item.style.border = "2px solid #A37B75";
 }
+
 
 function transpIn(e, opacity = "0.82") {
 	e.currentTarget.style.cursor = "pointer";
 	e.currentTarget.style.opacity = opacity;
 }
 
+
 function transpOut(e) {
 	e.currentTarget.style.opacity = "1";
 }
+
 
 const fixed_items = document.getElementsByClassName('img_plus');
 for (let i = 0; i < fixed_items.length; i++) {
