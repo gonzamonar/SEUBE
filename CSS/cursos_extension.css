@@ -26,6 +26,10 @@
 	content:url("http://seube.filo.uba.ar/sites/seube.filo.uba.ar/files/Signo%20%2B%2028.jpg");
 }
 
+.hidden {
+	display: none;
+}
+
 .course_heading {
     margin-bottom: 10px;
     min-height: 70px;
