@@ -97,8 +97,8 @@ function DrawHeader(curso){
 
 function CreateParagraph(classname, textNode, parent){
 	let p_element = document.createElement("p");
-	title_p.className = classname;
-	area_p.appendChild(document.createTextNode(textNode));
+	p_element.className = classname;
+	p_element.appendChild(document.createTextNode(textNode));
 	parent.appendChild(p_element);
 }
 
