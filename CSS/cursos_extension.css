@@ -1,21 +1,21 @@
 .course_title {
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-bottom: 4px;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-bottom: 4px;
 }
 
 
 .img_plus {
-    position: absolute;
-    display: inline-block;
-    right: 25px;
-    line-height: 85px;
-    width: 28px;
-    height: 28px;
-    position: absolute;
+	position: absolute;
+	display: inline-block;
+	right: 25px;
+	line-height: 85px;
+	width: 28px;
+	height: 28px;
+	position: absolute;
 }
 
 .deploy {
@@ -31,35 +31,40 @@
 }
 
 .course_heading {
-    margin-bottom: 10px;
-    min-height: 70px;
-    position: relative;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-left: 15px;
+	margin-bottom: 10px;
+	min-height: 70px;
+	position: relative;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+.course_heading:hover {
+	cursor: pointer;
+	opacity: 0.82;
 }
 
 .cerrada {
-    background-color: #404040;
+	background-color: #404040;
 }
 
 .virtual {
-    background-color: #659c44;
+	background-color: #659c44;
 }
 
 .presencial {
-    background-color: #db4e53;
+	background-color: #db4e53;
 }
 
 .course_info {
-    color: #e6e7e1;
-    box-sizing: border-box;
-    font-family: 'Geogrotesque',sans-serif;
-    text-transform: uppercase;
-    line-height: 1.428571429;
-    font-size: 12px;
-    margin-bottom: 5px;
-    display: inline-block;
+	color: #e6e7e1;
+	box-sizing: border-box;
+	font-family: 'Geogrotesque',sans-serif;
+	text-transform: uppercase;
+	line-height: 1.428571429;
+	font-size: 12px;
+	margin-bottom: 5px;
+	display: inline-block;
 }
 
 .course_info_slash {
@@ -70,29 +75,29 @@
 }
 
 .course_content {
-    width: 100%;
-    border-style: inset;
-    border-width: 2px;
-    margin-bottom: 20px;
+	width: 100%;
+	border-style: inset;
+	border-width: 2px;
+	margin-bottom: 20px;
 }
 
 .left_column {
-    background-color: #eeeeee;
-    border-style: inset;
-    border-width: 2px;
-    position: relative;
-    width: 35%;
-    display: inline-block;
-    float: left;
-    height: 100%;
+	background-color: #eeeeee;
+	border-style: inset;
+	border-width: 2px;
+	position: relative;
+	width: 35%;
+	display: inline-block;
+	float: left;
+	height: 100%;
 }
 
 .right_column {
-    position: relative;
-    width: 60%;
-    display: inline-block;
-    float: right;
-    padding-right: 5px;
+	position: relative;
+	width: 60%;
+	display: inline-block;
+	float: right;
+	padding-right: 5px;
 }
 
 .fieldtag {
@@ -101,34 +106,34 @@
 
 .course_number {
 	text-align: center;
-    color: #a37b75;
-    font-size: 18px;
-    padding-bottom: 5px;
-    font-family: 'Geogrotesque',Arial,Helvetica,sans-serif;
-    font-weight: 500;
+	color: #a37b75;
+	font-size: 18px;
+	padding-bottom: 5px;
+	font-family: 'Geogrotesque',Arial,Helvetica,sans-serif;
+	font-weight: 500;
 }
 
 .fieldtitle {
-    color: #7aba53;
-    font-size: 15px;
-    padding-bottom: 5px;
-    font-family: 'Geogrotesque',Arial,Helvetica,sans-serif;
-    font-weight: 500;
+	color: #7aba53;
+	font-size: 15px;
+	padding-bottom: 5px;
+	font-family: 'Geogrotesque',Arial,Helvetica,sans-serif;
+	font-weight: 500;
 }
 
 .field16 {
-    font-size: 16px;
+	font-size: 16px;
 }
 
 .fieldcontent {
-    text-align: justify;
-    font-size: 14px;
-    color: #888888;
+	text-align: justify;
+	font-size: 14px;
+	color: #888888;
 }
 
 .presentation {
-    text-align: justify;
-    color: #404040;
+	text-align: justify;
+	color: #404040;
 }
 
 .inscr_btn {
@@ -141,10 +146,8 @@
 	font-size: 13px;
 	padding: 15px 10px;
 	font-family: Georgia, serif;
-	margin-right: 15px;
 	text-align: center;
 	position: absolute;
-	margin: 0px;
 	transition: background-color 0.5s;
 }
 
