@@ -170,12 +170,14 @@ function CreateButton(parent, link="http://seube.filo.uba.ar/inscribite", tag="I
 	btn_div.className = "btn_container";
 		
 	let btn_p = document.createElement("p");
+	btn_div.appendChild(btn_p);
 	
-	
-	let btn_a = document.createElement("p");
+	let btn_a = document.createElement("a");
 	btn_a.className = "inscr_btn";
-	body_div.setAttribute("href", link);
-	body_div.setAttribute("target", "_blank");
+	btn_a.setAttribute("href", link);
+	btn_a.setAttribute("target", "_blank");
+	btn_a.appendChild(document.createTextNode(tag));
+	btn_p.appendChild(btn_a);
 
 	parent.appendChild(btn_div);
 }
