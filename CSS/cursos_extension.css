@@ -106,6 +106,7 @@
 
 .course_number {
 	text-align: center;
+	font-style: italic;
 	color: #a37b75;
 	font-size: 18px;
 	padding-bottom: 5px;
@@ -115,6 +116,7 @@
 
 .fieldtitle {
 	color: #7aba53;
+	font-style: italic;
 	font-size: 15px;
 	padding-bottom: 5px;
 	font-family: 'Geogrotesque',Arial,Helvetica,sans-serif;
