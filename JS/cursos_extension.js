@@ -30,17 +30,17 @@ class Curso {
 	}
 
 	function getTop(){
-	let brCount = (this.titulo.match(new RegExp("<br\/>", "g"))||[]).length;
-	let top = "30.5px";
-	switch(brCount){
-		case 1:
-			top = "44.5px";
-			break;
-		case 2:
-			top = "60.5px";
-			break;
-		}
-	return top;
+		let brCount = (this.titulo.match(new RegExp("<br\/>", "g"))||[]).length;
+		let top = "30.5px";
+		switch(brCount){
+			case 1:
+				top = "44.5px";
+				break;
+			case 2:
+				top = "60.5px";
+				break;
+			}
+		return top;
 	}
 }
 
@@ -104,7 +104,7 @@ function DrawHeader(curso){
 	let plus_img = document.createElement("img");
 	plus_img.setAttribute("id", idPlus);
 	plus_img.className = "img_plus deploy";
-	plus_img.style = "top: "+ curso.getTop() + ";";
+	plus_img.style = "top: "+ curso.top + ";";
 	header_div.appendChild(plus_img);
 
 	$("courseBlock").appendChild(header_div);
