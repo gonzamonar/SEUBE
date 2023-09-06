@@ -69,7 +69,7 @@ function DrawHeader(curso){
 
 	header_div.addEventListener("mouseOver", (e) => transpIn(this, 0.72));
 	header_div.addEventListener("mouseOut", (e) => transpOut(this));
-	<!-- header_div.addEventListener("click", (e) => desplegar(idCurso,idPlus)); -->
+	header_div.addEventListener("click", (e) => desplegar(idCurso,idPlus));
 
 	let slash_div = document.createElement("div");
 
