@@ -175,13 +175,13 @@ function CreateField(parent, fieldtitle, fieldcontent, hastitle=true, contentCla
 
 	if (hastitle){
 		let fieldtitle_div = document.createElement("div");
-		fieldtitle_div.className = "fieldtitle";
+		fieldtitle_div.className = titleClass;
 		fieldtitle_div.appendChild(document.createTextNode(fieldtitle));
 		field_div.appendChild(fieldtitle_div);
 	}
 	
 	let fieldcontent_div = document.createElement("div");
-	fieldcontent_div.className = classname;
+	fieldcontent_div.className = contentClass;
 	fieldcontent_div.innerHTML = fieldcontent;
 	field_div.appendChild(fieldcontent_div);
 	
