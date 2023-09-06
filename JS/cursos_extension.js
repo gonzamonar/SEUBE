@@ -76,34 +76,18 @@ function DrawHeader(curso){
 		header_div.className = "course_heading virtual";
 	}
 
-	header_div.addEventListener("mouseOver", transpIn(this, 0.72));
-	header_div.addEventListener("mouseOut", transpOut(this));
+	header_div.addEventListener("mouseOver", transpIn);
+	header_div.addEventListener("mouseOut", transpOut);
 	header_div.addEventListener("click", desplegar(idCurso,idPlus));
 
 	let slash_div = document.createElement("div");
-
-	let info_p = document.createElement("p");
-	info_p.className = "course_info";
-	info_p.appendChild(document.createTextNode("CURSO N.º"+curso.n));
-	slash_div.appendChild(info_p);
-
-	let slash_p = document.createElement("p");
-	slash_p.className = "course_info_slash";
-	slash_p.appendChild(document.createTextNode("|"));
-	let area_p = document.createElement("p");
-	area_p.className = "course_info";
-	area_p.style = "padding-left: 5px;";
-	area_p.appendChild(document.createTextNode(curso.getStatus("2023")));
-	slash_div.appendChild(slash_p );
-	slash_div.appendChild(area_p);
+	CreateParagraph("course_info", "CURSO Nº"+curso.n, slash_div);
+	CreateParagraph("course_info_slash", "|", slash_div);
+	CreateParagraph("course_info", curso.getStatus("2023"), slash_div);
 	header_div.appendChild(slash_div);
 
-
-	let title_p = document.createElement("p");
-	title_p.className = "course_title";
-	title_p.innerHTML = curso.titulo;
-	header_div.appendChild(title_p);
-
+	CreateParagraph("course_title", curso.titulo, header_div);
+	
 	let plus_img = document.createElement("img");
 	plus_img.setAttribute("id", idPlus);
 	plus_img.className = "fixed";
@@ -112,6 +96,12 @@ function DrawHeader(curso){
 	$("courseBlock").appendChild(header_div);
 }
 
+function CreateParagraph(classname, textNode, parent){
+	let p_element = document.createElement("p");
+	title_p.className = classname;
+	area_p.appendChild(document.createTextNode(textNode));
+	parent.appendChild(p_element);
+}
 
 function desplegar(a,b) {
         view=$(a).style.display;
