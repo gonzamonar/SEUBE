@@ -151,6 +151,7 @@
 .inscr_btn:hover {
 	background-color: #7aba53;
 	border: 2px solid #7aba53;
+	color: white;
 }
 
 .btn_container {
