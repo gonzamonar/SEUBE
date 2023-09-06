@@ -151,7 +151,7 @@ function BuildLeftColumn(parent, curso){
 	CreateField(leftCol, "FECHA DE FINALIZACIÓN", curso.fin);
 	CreateField(leftCol, "DÍA Y HORARIO", curso.horario);
 	CreateField(leftCol, "ARANCEL", "Gratuito");
-	body_div.appendChild(leftCol);
+	parent.appendChild(leftCol);
 }
 
 
@@ -161,8 +161,7 @@ function BuildRightColumn(parent, curso){
 	
 	CreateField(rightCol, "PRESENTACIÓN", curso.presentacion, true, "presentation", "fieldtitle field16");
 	CreateButton(rightCol, curso.link);
-	
-	body_div.appendChild(rightCol);
+	parent.appendChild(rightCol);
 }
 
 
