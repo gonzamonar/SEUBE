@@ -76,9 +76,9 @@ function DrawHeader(curso){
 		header_div.className = "course_heading virtual";
 	}
 
-	header_div.addEventListener("mouseOver", (e) => transpIn(this, 0.72));
-	header_div.addEventListener("mouseOut", (e) => transpOut(this));
-	header_div.addEventListener("click", (e) => desplegar(idCurso,idPlus));
+	header_div.addEventListener("mouseOver", transpIn(this, 0.72));
+	header_div.addEventListener("mouseOut", transpOut(this));
+	header_div.addEventListener("click", desplegar(idCurso,idPlus));
 
 	let slash_div = document.createElement("div");
 
