@@ -59,11 +59,11 @@ function DrawHeader(curso){
 	let idPlus = 'plus' +curso.n;
 
 	let header_div = document.createElement("div");
-	if (curso.inscripcion = "cerrada"){
+	if (curso.inscripcion == "cerrada"){
 		header_div.className = "course_heading cerrada";
-	}else if (curso.modalidad = "presencial"){
+	} else if (curso.modalidad == "presencial") {
 		header_div.className = "course_heading presencial";
-	}else{
+	} else {
 		header_div.className = "course_heading virtual";
 	}
 
@@ -84,9 +84,9 @@ function DrawHeader(curso){
 	let area_p = document.createElement("p");
 	area_p.className = "course_info";
 	area_p.style = "padding-left: 5px;";
-	if (curso.inscripcion == "CERRADA"){
+	if (curso.inscripcion == "CERRADA") {
 		area_p.appendChild(document.createTextNode("INSCRIPCIÓN CERRADA"));
-	}else{
+	} else {
 		area_p.appendChild(document.createTextNode(curso.area));
 	}
 	slash_div.appendChild(slash_p );
