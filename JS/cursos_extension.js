@@ -6,7 +6,7 @@ appendCSS("https://gonzamonar.github.io/SEUBE/CSS/cursos_extension.css");
 class Curso {
 	constructor(n, inscripcion, modalidad, titulo, top, altura, area, docente, inicio, fin, horario, link, presentacion) {
 		this.n = parseInt(n);
-		this.inscripcion = inscripcion;
+		this.inscripcion = inscripcion == undefined ? "abierta" : inscripcion ;
 		this.modalidad = modalidad;
 		this.titulo = titulo;
 		this.top = top;
@@ -18,6 +18,22 @@ class Curso {
 		this.horario = horario;
 		this.link = link;
 		this.presentacion = presentacion;
+	}
+
+	getStatus(year){
+		if (this.inscripcion == "cerrada") {
+			return "INSCRIPCIÓN CERRADA"
+		} else {
+			return `MODALIDAD {this.modalidad.toUpperCase()} – INICIA {this.getMonth()} {year}`;	
+		}
+	}
+
+	getMonth(){
+		if (this.inicio != "A Confirmar") {
+			return this.inicio.split(' ').slice(-1)[0].toUpperCase();
+		} else {
+			return "PRÓXIMAMENTE";
+		}
 	}
 }
 
@@ -84,11 +100,7 @@ function DrawHeader(curso){
 	let area_p = document.createElement("p");
 	area_p.className = "course_info";
 	area_p.style = "padding-left: 5px;";
-	if (curso.inscripcion == "CERRADA") {
-		area_p.appendChild(document.createTextNode("INSCRIPCIÓN CERRADA"));
-	} else {
-		area_p.appendChild(document.createTextNode(curso.area));
-	}
+	area_p.appendChild(document.createTextNode(curso.getStatus("2023")));
 	slash_div.appendChild(slash_p );
 	slash_div.appendChild(area_p);
 	header_div.appendChild(slash_div);
