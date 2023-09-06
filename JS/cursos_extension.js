@@ -85,7 +85,7 @@ function DrawHeader(curso){
 	CreateParagraph("course_info", curso.getStatus("2023"), slash_div);
 	header_div.appendChild(slash_div);
 
-	CreateParagraph("course_title", curso.titulo, header_div);
+	CreateParagraphInnerHTML("course_title", curso.titulo, header_div);
 	
 	let plus_img = document.createElement("img");
 	plus_img.setAttribute("id", idPlus);
@@ -99,6 +99,13 @@ function CreateParagraph(classname, textNode, parent){
 	let p_element = document.createElement("p");
 	p_element.className = classname;
 	p_element.appendChild(document.createTextNode(textNode));
+	parent.appendChild(p_element);
+}
+
+function CreateParagraphInnerHTML(classname, textNode, parent){
+	let p_element = document.createElement("p");
+	p_element.className = classname;
+	p_element.innerHTML = textNode;
 	parent.appendChild(p_element);
 }
 
