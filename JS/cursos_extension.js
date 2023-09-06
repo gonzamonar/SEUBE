@@ -3,29 +3,31 @@ import { appendCSS } from "https://gonzamonar.github.io/SEUBE/JS/Export/appendCS
 appendCSS("https://gonzamonar.github.io/SEUBE/CSS/cursos_extension.css");
 
 
-async function fetchDataAsync(url) {
+class Curso {
+	constructor(n, inscripcion, modalidad, titulo, top, altura, area, docente, inicio, fin, horario, link, presentacion) {
+		this.n = parseInt(n);
+		this.inscripcion = inscripcion;
+		this.modalidad = modalidad;
+		this.titulo = titulo;
+		this.top = top;
+		this.altura = altura;
+		this.area = area;
+		this.docente = docente;
+		this.inicio = inicio;
+		this.fin = fin;
+		this.horario = horario;
+		this.link = link;
+		this.presentacion = presentacion;
+	}
+}
+
+
+async function FetchDataAsync(url) {
     const response = await fetch(url);
     let jsonArray = await response.json();
     return jsonArray;
 }
 
-class Curso {
-    constructor(n, inscripcion, modalidad, titulo, top, altura, area, docente, inicio, fin, horario, link, presentacion) {
-            this.n = parseInt(n);
-            this.inscripcion = inscripcion;
-            this.modalidad = modalidad;
-            this.titulo = titulo;
-            this.top = top;
-            this.altura = altura;
-            this.area = area;
-            this.docente = docente;
-            this.inicio = inicio;
-            this.fin = fin;
-            this.horario = horario;
-            this.link = link;
-            this.presentacion = presentacion;
-    }
-  }
 
 function ParseJson(json){
     let items = [];
@@ -37,20 +39,18 @@ function ParseJson(json){
     return items;
 }
 
+
 function $(id){
     return document.getElementById(id);
 }
 
 
 async function InitCourses(){
-	let json_file = await fetchDataAsync('https://gonzamonar.github.io/SEUBE/cursos.json');
-	console.log(json_file);
+	let json_file = await FetchDataAsync('https://gonzamonar.github.io/SEUBE/cursos.json');
 	let cursos = ParseJson(json_file);
-	console.log(cursos);
     	cursos.forEach(curso => {
         		DrawHeader(curso);
    	});
-   	StyleCourses();
 }
 
 
@@ -84,7 +84,7 @@ function DrawHeader(curso){
 	let area_p = document.createElement("p");
 	area_p.className = "course_info";
 	area_p.style = "padding-left: 5px;";
-	if (curso.inscripcion = "CERRADA"){
+	if (curso.inscripcion == "CERRADA"){
 		area_p.appendChild(document.createTextNode("INSCRIPCIÓN CERRADA"));
 	}else{
 		area_p.appendChild(document.createTextNode(curso.area));
@@ -107,6 +107,7 @@ function DrawHeader(curso){
 	$("courseBlock").appendChild(header_div);
 }
 
+
 function desplegar(a,b) {
         view=$(a).style.display;
 
@@ -123,29 +124,28 @@ function desplegar(a,b) {
 
 
 function mouseOver(x) {
- x.style.backgroundColor = "#7aba53";
- x.style.border = "2px solid #7aba53";
+	x.style.backgroundColor = "#7aba53";
+	x.style.border = "2px solid #7aba53";
 }
 
 function mouseOut(x) {
- x.style.backgroundColor = "#A37B75";
- x.style.border = "2px solid #A37B75";
+	x.style.backgroundColor = "#A37B75";
+	x.style.border = "2px solid #A37B75";
 }
 
 function transpIn(item, opacity="0.82") {
-    item.style.cursor = "pointer";
-    item.style.opacity = opacity;
+	item.style.cursor = "pointer";
+	item.style.opacity = opacity;
 }
 
 function transpOut(item) {
-    item.style.opacity = "1";
+	item.style.opacity = "1";
 }
 
 const fixed_items = document.getElementsByClassName('img_plus');
 for (let i = 0; i < fixed_items.length; i++) {
-    let item = fixed_items[i];  
-    item.ondragstart = function() { return false; };
+	let item = fixed_items[i];  
+	item.ondragstart = function() { return false; };
 }
 
 InitCourses();
-
