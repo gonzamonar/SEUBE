@@ -72,8 +72,16 @@ async function InitCourses(){
 	let json_file = await FetchDataAsync('https://gonzamonar.github.io/SEUBE/cursos.json');
 	let cursos = ParseJson(json_file);
     	cursos.forEach(curso => {
-		DrawHeader(curso);
+		DrawCourse(curso);
    	});
+}
+
+function DrawCourse(curso){
+	let header = DrawHeader(curso);
+	let body = DrawBody(curso);
+	
+	$("courseBlock").appendChild(header);
+	$("courseBlock").appendChild(body);
 }
 
 
@@ -106,8 +114,78 @@ function DrawHeader(curso){
 	plus_img.className = "img_plus deploy";
 	plus_img.style = "top: "+ curso.getTop() + ";";
 	header_div.appendChild(plus_img);
+	
+	return header_div;
+}
 
-	$("courseBlock").appendChild(header_div);
+function DrawBody(curso){
+	let idCurso = 'curso' +curso.n;
+
+	let body_div = document.createElement("div");
+	body_div.setAttribute("id", idCurso);
+	body_div.className = "course_content";
+	body_div.style.height = curso.altura;
+	BuildLeftColumn(body_div, curso);
+	BuildRightColumn(body_div, curso);
+	
+	return body_div;
+}
+
+function BuildLeftColumn(parent, curso){
+	let leftCol = document.createElement("div");
+	leftCol.className = "left_column";
+	
+	CreateField(leftCol, "", "CURSO Nº"+curso.n, false, "course_number");
+	CreateField(leftCol, "DOCENTE", curso.docente));
+	CreateField(leftCol, "FECHA DE INICIO", curso.inicio));
+	CreateField(leftCol, "FECHA DE FINALIZACIÓN", curso.fin));
+	CreateField(leftCol, "DÍA Y HORARIO", curso.horario));
+	CreateField(leftCol, "ARANCEL", "Gratuito"));
+	body_div.appendChild(leftCol);
+}
+
+function BuildRightColumn(parent, curso){
+	let rightCol = document.createElement("div");
+	rightCol.className = "right_column";
+	
+	CreateField(rightCol, "PRESENTACIÓN", curso.presentacion, true, "presentation", "fieldtitle field16");
+	CreateButton(rightCol, curso.link);
+	
+	body_div.appendChild(rightCol);
+}
+
+function CreateButton(parent, link="http://seube.filo.uba.ar/inscribite", tag="Inscribirse"){
+	let btn_div = document.createElement("div");
+	btn_div.className = "btn_container";
+		
+	let btn_p = document.createElement("p");
+	
+	
+	let btn_a = document.createElement("p");
+	btn_a.className = "inscr_btn";
+	body_div.setAttribute("href", link);
+	body_div.setAttribute("target", "_blank");
+
+	parent.appendChild(btn_div);
+}
+
+function CreateField(parent, fieldtitle, fieldcontent, hastitle=true, contentClass="fieldcontent", titleClass="fieldtitle"){
+	let field_div = document.createElement("div");
+	field_div.className = "fieldtag";
+
+	if (hastitle){
+		let fieldtitle_div = document.createElement("div");
+		fieldtitle_div.className = "fieldtitle";
+		fieldtitle_div.appendChild(document.createTextNode(fieldtitle));
+		field_div.appendChild(fieldtitle_div);
+	}
+	
+	let fieldcontent_div = document.createElement("div");
+	fieldcontent_div.className = classname;
+	fieldcontent_div.innerHTML = fieldcontent;
+	field_div.appendChild(fieldcontent_div);
+	
+	parent.appendChild(field_div);
 }
 
 function CreateParagraph(classname, textNode, parent){
