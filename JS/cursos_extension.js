@@ -21,19 +21,12 @@ class Curso {
 	}
 
 	getStatus(year){
-		if (this.inscripcion == "cerrada") {
-			return "INSCRIPCIÓN CERRADA"
-		} else {
-			return `MODALIDAD {this.modalidad.toUpperCase()} – INICIA {this.getMonth()} {year}`;	
-		}
+		return this.inscripcion == "cerrada" ? "INSCRIPCIÓN CERRADA" :
+					   "MODALIDAD "+ this.modalidad.toUpperCase()+" – INICIA "+ this.getMonth() + " " + year ;
 	}
 
 	getMonth(){
-		if (this.inicio != "A Confirmar") {
-			return this.inicio.split(' ').slice(-1)[0].toUpperCase();
-		} else {
-			return "PRÓXIMAMENTE";
-		}
+		return this.inicio == "A Confirmar" ? "PRÓXIMAMENTE" : this.inicio.split(' ').slice(-1)[0].toUpperCase() ;
 	}
 }
 
