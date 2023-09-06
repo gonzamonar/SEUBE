@@ -128,7 +128,7 @@
     color: #404040;
 }
 
-.inscr_button {
+.inscr_btn {
     background-color: #a37b75;
     border: 2px solid #A37B75;
     border-radius: 5px;
@@ -141,4 +141,8 @@
     text-align: center;
     position: absolute;
     margin: 0px;
+}
+
+.btn_container {
+    margin-left: 38%;
 }
