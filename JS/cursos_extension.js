@@ -64,7 +64,7 @@ async function InitCourses(){
 
 
 function DrawHeader(curso){
-	let idCurso = 'Curso' +curso.n;
+	let idCurso = 'curso' +curso.n;
 	let idPlus = 'plus' +curso.n;
 
 	let header_div = document.createElement("div");
@@ -78,7 +78,6 @@ function DrawHeader(curso){
 
 	header_div.addEventListener("mouseOver", transpIn);
 	header_div.addEventListener("mouseOut", transpOut);
-	header_div.addEventListener("click", desplegar(idCurso,idPlus));
 
 	let slash_div = document.createElement("div");
 	CreateParagraph("course_info", "CURSO Nº"+curso.n, slash_div);
