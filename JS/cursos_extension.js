@@ -59,7 +59,7 @@ function $(id){
 
 function ToggleClass(element, classname){
 	if(element != null) {
-	element.classList.toggle(classname);
+		element.classList.toggle(classname);
 	}
 }
 
@@ -217,18 +217,10 @@ function CreateParagraphInnerHTML(classname, textNode, parent){
 }
 
 
-function desplegar(a,b) {
-        view=$(a).style.display;
-
-        if (view=='none') {
-            view='block';
-            source='/sites/seube.filo.uba.ar/files/Signo%20-%2028-B%20Bold.jpg';
-        } else {
-            view='none';
-            source='/sites/seube.filo.uba.ar/files/Signo%20%2B%2028.jpg';
-        }
-        $(a).style.display = view;
-        $(b).src = source;
+function deploy(id_curso, id_img) {
+	ToggleClass($(id_curso), "hidden");
+	ToggleClass($(id_img), "deploy");
+	ToggleClass($(id_img), "reploy");
 }
 
 
