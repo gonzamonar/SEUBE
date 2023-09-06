@@ -29,8 +29,8 @@ class Curso {
 		return this.inicio == "A Confirmar" ? "PRÓXIMAMENTE" : this.inicio.split(' ').slice(-1)[0].toUpperCase() ;
 	}
 
-	function getTop(){
-		let brCount = (this.titulo.match(new RegExp("<br\/>", "g"))||[]).length;
+	getTop(){
+		let brCount = (this.titulo.match(new RegExp("<br/>", "g"))||[]).length;
 		let top = "30.5px";
 		switch(brCount){
 			case 1:
