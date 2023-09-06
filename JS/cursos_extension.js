@@ -106,9 +106,6 @@ function DrawHeader(curso){
 		header_div.className = "course_heading virtual";
 	}
 
-	header_div.addEventListener("mouseover", transpIn);
-	header_div.addEventListener("mouseout", transpOut);
-
 	let slash_div = document.createElement("div");
 	CreateParagraph("course_info", "CURSO Nº"+curso.n, slash_div);
 	CreateParagraph("course_info_slash", "|", slash_div);
@@ -223,29 +220,6 @@ function deploy(id_curso, id_img) {
 	ToggleClass($(id_curso), "hidden");
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
-}
-
-
-function mouseOver(item) {
-	item.style.backgroundColor = "#7aba53";
-	item.style.border = "2px solid #7aba53";
-}
-
-
-function mouseOut(item) {
-	item.style.backgroundColor = "#A37B75";
-	item.style.border = "2px solid #A37B75";
-}
-
-
-function transpIn(e, opacity = "0.82") {
-	e.currentTarget.style.cursor = "pointer";
-	e.currentTarget.style.opacity = opacity;
-}
-
-
-function transpOut(e) {
-	e.currentTarget.style.opacity = "1";
 }
 
 
