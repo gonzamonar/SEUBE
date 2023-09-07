@@ -177,16 +177,18 @@
 }
 
 .filter_lbl {
-	font-size: 16px;
+	font-size: 15px;
 	color: #404040;
 }
 
 .filter_select {
-	font-size: 16px;
-	color: #404040;
+	font-size: 14px;
+	border: 1px solid #cccccc;
+	color: #555555;
 	border-radius: 5px;
 	width: 150px;
 	padding: 5px;
+	outline: none;
 }
 
 .filter_select:hover {
