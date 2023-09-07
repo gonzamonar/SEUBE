@@ -1,14 +1,16 @@
 const YEAR = new Date().getFullYear();
 
 
-export async function CargarCursos(url_json, id_container="bloque_cursos"){
+export async function CargarCursos(url_json, has_filter=false, id_container="bloque_cursos"){
 	let json_file = await FetchDataAsync(url_json);
 	let cursos = ParseJson(json_file);
     	cursos.forEach(curso => {
 		DrawCourse(curso, id_container);
    	});
+	if(has_filter){
+		$("filtro_cursos").addEventListener("change", ApplyFilter);
+	}
 }
-
 
 class Curso {
 	constructor(n, inscripcion, modalidad, titulo, docente, inicio, fin, horario, link, presentacion) {
