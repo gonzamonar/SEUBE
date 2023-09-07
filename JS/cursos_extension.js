@@ -134,7 +134,6 @@ function DrawBody(curso){
 	let body_div = document.createElement("div");
 	body_div.setAttribute("id", idCurso);
 	body_div.className = "course_content hidden";
-	body_div.style.height = curso.altura;
 	BuildLeftColumn(body_div, curso);
 	BuildRightColumn(body_div, curso);
 	
