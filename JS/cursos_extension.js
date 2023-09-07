@@ -5,14 +5,11 @@ appendCSS("https://gonzamonar.github.io/SEUBE/CSS/cursos_extension.css");
 const YEAR = new Date().getFullYear();
 
 class Curso {
-	constructor(n, inscripcion, modalidad, titulo, top, altura, area, docente, inicio, fin, horario, link, presentacion) {
+	constructor(n, inscripcion, modalidad, titulo, docente, inicio, fin, horario, link, presentacion) {
 		this.n = parseInt(n);
-		this.inscripcion = inscripcion == undefined ? "abierta" : inscripcion ;
+		this.inscripcion = inscripcion;
 		this.modalidad = modalidad;
 		this.titulo = titulo;
-		this.top = top;
-		this.altura = altura;
-		this.area = area;
 		this.docente = docente;
 		this.inicio = inicio;
 		this.fin = fin;
@@ -69,7 +66,7 @@ function ParseJson(json){
     let items = [];
     json.forEach(e => {
             let item;
-            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.top, e.altura, e.area, e.docente, e.inicio, e.fin, e.horario, e.link, e.presentacion);
+            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.docente, e.inicio, e.fin, e.horario, e.link, e.presentacion);
             items.push(item);
     });
     return items;
