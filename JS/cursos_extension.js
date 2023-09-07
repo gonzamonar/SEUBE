@@ -95,7 +95,7 @@ function DrawCourse(curso){
 
 function DrawHeader(curso){
 	let idCurso = 'curso' +curso.n;
-	let idPlus = 'plus' +curso.n;
+	let idImg = 'plus' +curso.n;
 
 	let header_div = document.createElement("div");
 	if (curso.inscripcion == "cerrada"){
@@ -106,6 +106,10 @@ function DrawHeader(curso){
 		header_div.className = "course_heading virtual";
 	}
 
+	header_div.addEventListener('click', (e) => {
+		deploy(idCurso, idImg);
+    	});
+
 	let slash_div = document.createElement("div");
 	CreateParagraph("course_info", "CURSO Nº"+curso.n, slash_div);
 	CreateParagraph("course_info_slash", "|", slash_div);
@@ -115,7 +119,7 @@ function DrawHeader(curso){
 	CreateParagraphInnerHTML("course_title", curso.titulo, header_div);
 	
 	let plus_img = document.createElement("img");
-	plus_img.setAttribute("id", idPlus);
+	plus_img.setAttribute("id", idImg);
 	plus_img.className = "img_plus deploy";
 	plus_img.style = "top: "+ curso.getTop() + ";";
 	header_div.appendChild(plus_img);
@@ -129,7 +133,7 @@ function DrawBody(curso){
 
 	let body_div = document.createElement("div");
 	body_div.setAttribute("id", idCurso);
-	body_div.className = "course_content";
+	body_div.className = "course_content hidden";
 	body_div.style.height = curso.altura;
 	BuildLeftColumn(body_div, curso);
 	BuildRightColumn(body_div, curso);
