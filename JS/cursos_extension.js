@@ -4,6 +4,16 @@ appendCSS("https://gonzamonar.github.io/SEUBE/CSS/cursos_extension.css");
 
 const YEAR = new Date().getFullYear();
 
+
+export async function CargarCursos(url_json, id_container="bloque_cursos"){
+	let json_file = await FetchDataAsync(url_json);
+	let cursos = ParseJson(json_file);
+    	cursos.forEach(curso => {
+		DrawCourse(curso, id_container);
+   	});
+}
+
+
 class Curso {
 	constructor(n, inscripcion, modalidad, titulo, docente, inicio, fin, horario, link, presentacion) {
 		this.n = parseInt(n);
@@ -73,21 +83,12 @@ function ParseJson(json){
 }
 
 
-async function InitCourses(){
-	let json_file = await FetchDataAsync('https://gonzamonar.github.io/SEUBE/cursos.json');
-	let cursos = ParseJson(json_file);
-    	cursos.forEach(curso => {
-		DrawCourse(curso);
-   	});
-}
-
-
-function DrawCourse(curso){
+function DrawCourse(curso, id_container){
 	let header = DrawHeader(curso);
 	let body = DrawBody(curso);
 	
-	$("courseBlock").appendChild(header);
-	$("courseBlock").appendChild(body);
+	$(id_container).appendChild(header);
+	$(id_container).appendChild(body);
 }
 
 
@@ -223,6 +224,3 @@ function Deploy(id_curso, id_img) {
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
 }
-
-
-InitCourses();
