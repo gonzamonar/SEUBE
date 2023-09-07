@@ -2,6 +2,7 @@ import { appendCSS } from "https://gonzamonar.github.io/SEUBE/JS/Export/appendCS
 
 appendCSS("https://gonzamonar.github.io/SEUBE/CSS/cursos_extension.css");
 
+const YEAR = new Date().getFullYear();
 
 class Curso {
 	constructor(n, inscripcion, modalidad, titulo, top, altura, area, docente, inicio, fin, horario, link, presentacion) {
@@ -107,19 +108,20 @@ function DrawHeader(curso){
 	}
 
 	header_div.addEventListener('click', (e) => {
-		deploy(idCurso, idImg);
+		Deploy(idCurso, idImg);
     	});
 
 	let slash_div = document.createElement("div");
 	CreateParagraph("course_info", "CURSO Nº"+curso.n, slash_div);
 	CreateParagraph("course_info_slash", "|", slash_div);
-	CreateParagraph("course_info", curso.getStatus("2023"), slash_div);
+	CreateParagraph("course_info", curso.getStatus(YEAR), slash_div);
 	header_div.appendChild(slash_div);
 
 	CreateParagraphInnerHTML("course_title", curso.titulo, header_div);
 	
 	let plus_img = document.createElement("img");
 	plus_img.setAttribute("id", idImg);
+	plus_img.setAttribute("draggable", false);
 	plus_img.className = "img_plus deploy";
 	plus_img.style = "top: "+ curso.getTop() + ";";
 	header_div.appendChild(plus_img);
@@ -219,17 +221,11 @@ function CreateParagraphInnerHTML(classname, textNode, parent){
 }
 
 
-function deploy(id_curso, id_img) {
+function Deploy(id_curso, id_img) {
 	ToggleClass($(id_curso), "hidden");
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
 }
 
-
-const fixed_items = document.getElementsByClassName('img_plus');
-for (let i = 0; i < fixed_items.length; i++) {
-	let item = fixed_items[i];  
-	item.ondragstart = function() { return false; };
-}
 
 InitCourses();
