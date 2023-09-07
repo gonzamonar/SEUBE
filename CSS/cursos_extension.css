@@ -76,8 +76,8 @@
 
 
 .course_content {
+	display: flex;
 	width: 100%;
-	display: inline-block;
 	border-style: inset;
 	border-width: 2px;
 	margin-bottom: 20px;
