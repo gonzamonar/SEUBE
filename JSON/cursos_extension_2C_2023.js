@@ -3,4 +3,4 @@ import { appendCSS } from "https://gonzamonar.github.io/SEUBE/JS/Export/appendCS
 
 appendCSS("https://gonzamonar.github.io/SEUBE/CSS/cursos_extension.css");
 CargarCursos("https://gonzamonar.github.io/SEUBE/JSON/cursos_extension_2C_2023.json");
-$("").addEventListener("change", "ApplyFilter);
+$("").addEventListener("change", ApplyFilter);
