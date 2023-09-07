@@ -197,3 +197,25 @@
 .filter_select:hover {
 	cursor: pointer;
 }
+
+p .title {
+	background-color: #659c44;
+	margin: 20px 0px
+	padding: 12px 20px;
+	position: relative;
+	display: block;
+	font-size: 22px;
+	font-family: 'Droid Serif';
+	color: #ffffff;
+	text-align: left;"
+}
+
+body p {
+	color: #404040;
+	font-size: 13px;
+}
+
+body a {
+	color: #659c44;
+	font-weight: bold;
+}
