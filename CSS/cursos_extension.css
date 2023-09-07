@@ -189,4 +189,6 @@
 	padding: 5px;
 }
 
-
+.filter_select:hover {
+	cursor: pointer;
+}
