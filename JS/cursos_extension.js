@@ -220,3 +220,38 @@ function Deploy(id_curso, id_img) {
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
 }
+
+function ApplyFilter(){
+    ClearFilter();
+    if ($("filtro_cursos").value == "0"){
+        Filter(FilterCerrada);
+    } else if  ($("filtro_cursos").value == "1") {
+        Filter(FilterAbierta);
+    }
+}
+
+function Filter(ValidationFunc){
+    const headers = document.getElementsByClassName('course_heading');
+    for (let i = 0; i < headers.length; i++) {
+        let element = headers[i];
+        if (ValidationFunc(element)) {
+            element.classList.add("hidden");
+        }
+    }
+}
+
+function ClearFilter(){
+    const headers = document.getElementsByClassName('course_heading');
+    for (let i = 0; i < headers.length; i++) {
+        let element = headers[i];
+        element.classList.remove("hidden");
+    }
+}
+
+function FilterAbierta(element){
+    return !element.classList.contains("cerrada");
+}
+
+function FilterCerrada(element){
+    return element.classList.contains("cerrada")
+}
