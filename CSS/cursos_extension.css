@@ -88,6 +88,8 @@
 }
 
 .left_column {
+	display:flex;
+	flex-direction: column;
 	background-color: #eeeeee;
 	border-style: inset;
 	border-width: 2px;
@@ -99,9 +101,10 @@
 }
 
 .right_column {
+	display:flex;
+	flex-direction: column;
 	position: relative;
 	width: 65%;
-	display: inline-block;
 	float: right;
 }
 
