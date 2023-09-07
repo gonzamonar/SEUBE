@@ -90,14 +90,12 @@
 .left_column {
 	display:flex;
 	flex-direction: column;
+	position: relative;
 	background-color: #eeeeee;
 	border-style: inset;
 	border-width: 2px;
-	position: relative;
-	width: 35%;
-	display: inline-block;
 	float: left;
-	height: 100%;
+	width: 35%;
 }
 
 .right_column {
