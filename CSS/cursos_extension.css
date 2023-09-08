@@ -198,16 +198,18 @@
 	cursor: pointer;
 }
 
-.title {
+.cuatri_title {
 	background-color: #659c44;
-	margin: 20px 0px
+	margin: 20px 0px 0px;
 	padding: 12px 20px;
 	position: relative;
 	display: block;
+	z-index: 10;
+	border: none;
 	font-size: 22px;
 	font-family: 'Droid Serif';
 	color: #ffffff;
-	text-align: left;"
+	text-align: left;
 }
 
 body p {
