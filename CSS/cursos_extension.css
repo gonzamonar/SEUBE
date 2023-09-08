@@ -200,6 +200,17 @@
 
 .cuatri_title {
 	background-color: #659c44;
+	margin-top: 20px;
+	padding: 12px 20px;
+	position: relative;
+	display: block;
+	font-size: 22px;
+	font-family: 'Droid Serif';
+	color: #ffffff;
+}
+
+.safe {
+	background-color: #659c44;
 	margin: 20px 0px 0px;
 	padding: 12px 20px;
 	position: relative;
