@@ -4,12 +4,14 @@ const YEAR = new Date().getFullYear();
 export async function CargarCursos(url_json, has_filter=false, id_container="bloque_cursos"){
 	let json_file = await FetchDataAsync(url_json);
 	let cursos = ParseJson(json_file);
+	
+	if(has_filter){
+		CreateFilter(id_container);
+	}
+	
     	cursos.forEach(curso => {
 		DrawCourse(curso, id_container);
    	});
-	if(has_filter){
-		$("filtro_cursos").addEventListener("change", ApplyFilter);
-	}
 }
 
 class Curso {
@@ -221,6 +223,37 @@ function Deploy(id_curso, id_img) {
 	ToggleClass($(id_curso), "hidden");
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
+}
+
+function CreateFilter(id_container){
+	let filter_div = document.createElement("div");
+	filter_div.className = "filter_container";
+	CreateParagraph("filter_lbl", "Estado de Inscripción", filter_div);
+	
+	let filter_select = document.createElement("select");
+	filter_select.className = "filter_select";
+	filter_select.setAttribute("id", "filtro_cursos");
+	filter_select.addEventListener("change", ApplyFilter);
+
+	let option1 = document.createElement("option");
+	option1.setAttribute("selected", "selected");
+	option1.setAttribute("value", "All");
+	option1.appendChild(document.createTextNode("- Cualquiera -"));
+	filter_select.appendChild(option1);
+	
+	let option2 = document.createElement("option");
+	option2.setAttribute("value", "0");
+	option2.appendChild(document.createTextNode("Abierta"));
+	filter_select.appendChild(option2);
+	
+	let option3 = document.createElement("option");
+	option3.setAttribute("value", "1");
+	option3.appendChild(document.createTextNode("Cerrada"));
+	filter_select.appendChild(option3);
+	
+	filter_div.appendChild(filter_select);
+	
+	$(id_container).appendChild(filter_div);
 }
 
 function ApplyFilter(){
