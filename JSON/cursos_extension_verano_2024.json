@@ -1,0 +1,50 @@
+[
+    {
+        "n":1,
+        "inscripcion":"abierta",
+        "modalidad":"virtual",
+        "titulo":"Curso \u201cAurora Venturini: irreverencia, trayectorias y literatura\u201d",
+        "docente":"Carolina Rossini",
+        "inicio":"14 de febrero",
+        "fin":"27 de marzo",
+        "horario":"Mi\u00e9rcoles \u2013 18 a 20 hs.",
+        "link":"http:\/\/seube.filo.uba.ar\/inscribite",
+        "presentacion":null
+    },
+    {
+        "n":2,
+        "inscripcion":"abierta",
+        "modalidad":"virtual",
+        "titulo":"Curso \"Como una planta que crece sobre un muro: la est\u00e9tica de Felisberto Hern\u00e1ndez\u201d",
+        "docente":"Daniela Gim\u00e9nez",
+        "inicio":"20 de febrero",
+        "fin":"26 de marzo",
+        "horario":"Martes \u2013 15 a 17 hs.",
+        "link":"http:\/\/seube.filo.uba.ar\/inscribite",
+        "presentacion":null
+    },
+    {
+        "n":3,
+        "inscripcion":"abierta",
+        "modalidad":"virtual",
+        "titulo":"Curso \u201cMorfolog\u00eda del mito\u201d",
+        "docente":"Maria Cecilia Pelegri<br\/>Leandro Sebastian Rossi",
+        "inicio":"14 de febrero",
+        "fin":"27 de marzo",
+        "horario":"Mi\u00e9rcoles \u2013 9 a 11 hs.",
+        "link":"http:\/\/seube.filo.uba.ar\/inscribite",
+        "presentacion":null
+    },
+    {
+        "n":4,
+        "inscripcion":"abierta",
+        "modalidad":"virtual",
+        "titulo":"Curso \"Discursos de odio y Edad Media\"",
+        "docente":"Roc\u00edo Bello Gay<br\/>Tamara Somoza<br\/>Sof\u00eda Membrado",
+        "inicio":"15 de febrero",
+        "fin":"7 de marzo",
+        "horario":"Jueves \u2013 18 a 20 hs.",
+        "link":"http:\/\/seube.filo.uba.ar\/inscribite",
+        "presentacion":null
+    }
+]
