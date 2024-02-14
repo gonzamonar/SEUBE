@@ -25,12 +25,13 @@ p, span {
 
 .selector {
     transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     opacity: 1;
     border-radius: 5px;
     color: #ffffff;
-    text-align: center;
-    font-size: x-large;
-    line-height: 100px;
     font-family: Geogrotesque;
 }
 
