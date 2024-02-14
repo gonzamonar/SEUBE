@@ -33,6 +33,7 @@ p, span {
     border-radius: 5px;
     color: #ffffff;
     font-family: Geogrotesque;
+    font-size: x-large;
 }
 
 .selector:hover {
