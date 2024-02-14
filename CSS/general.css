@@ -18,7 +18,7 @@ p, span {
     color: #d9d9d9;
 }
 
-.selector:has(> div){
+div:has(< p.selector){
     border-radius: 5px;
 }
 
