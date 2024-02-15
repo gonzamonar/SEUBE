@@ -21,12 +21,21 @@ h3 {
 }
 
 .convocatoria {
+    transition: all 0.3s ease-in-out;
     text-align: center;
     width: 80%;
     margin: 30px 0px 30px 10%;
     font-size: large;
     background-color: #0098d4;
+    border: 1px solid #0098d4;
     border-radius: 5px;
     padding: 10px 20px;
     color: #ffffff;
+}
+
+.convocatoria:hover {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #0098d4;
 }
