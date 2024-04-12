@@ -253,7 +253,7 @@
     },
     {
         "n":23,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"presencial",
         "titulo":"Curso \u201cProcesos de alfabetizaci\u00f3n inicial en<br>personas j\u00f3venes y adultas: una mirada epistemol\u00f3gica<br>constructivista y de educaci\u00f3n popular\u201d.",
         "docente":"Marcela Kurlat <br> Sandra Llosa",
@@ -265,7 +265,7 @@
     },
     {
         "n":24,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201c Kafka lesen \u2013 Kafka en Am\u00e9rica latina<br>(taller de lectura de textos en alem\u00e1n)\u201d",
         "docente":"Patrick Eser",
@@ -283,7 +283,7 @@
         "docente":"Patrick Eser <br> Mariano Javier Sverdloff",
         "inicio":"17 de abril",
         "fin":"19 de junio",
-        "horario":"Mi\u00e9rcoles \u2013 16 a 20 hs.",
+        "horario":"Mi\u00e9rcoles \u2013 16 a 20 hs.<br>Sede Puan",
         "link":"http:\/\/seube.filo.uba.ar\/inscribite",
         "presentacion":"El seminario propone un acercamiento al fen\u00f3meno de la \u2018fascistizaci\u00f3n de las mentes\u2019 mediante un an\u00e1lisis de las \u2018literaturas de las derechas\u2019. Las \u2018literaturas de las derechas\u2019 se oponen a cuestiones tales como la emancipaci\u00f3n pol\u00edtica, la deliberaci\u00f3n democr\u00e1tica, la igualdad, y, en algunos casos, a la idea de progreso entendida en t\u00e9rminos iluministas. Proponemos un corpus que contiene tanto textos te\u00f3ricos como ejemplos tomados de la historia literaria europea y latinoamericana. Los textos de las derechas, en tanto artefactos literarios, suelen inscribirse simult\u00e1neamente en la autonom\u00eda y la heteronom\u00eda, y ofrecen relaciones a menudo parad\u00f3jicas con la temporalidad de la modernidad est\u00e9tica. Nociones te\u00f3ricas tales como \u00abantimodernidad\u00bb, \u00abretrogradismo\u00bb o \u00abmodernidad alternativa\u00bb, intentan interpretar estos posicionamientos problem\u00e1ticos, en los cuales el rechazo a los valores de la modernidad, termina, sin embargo, por configurar un cierto di\u00e1logo con ellos. Proponemos un corpus que contiene tanto textos te\u00f3ricos como ejemplos tomados de la historia literaria europea y latinoamericana."
     },
