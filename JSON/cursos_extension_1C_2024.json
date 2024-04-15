@@ -61,7 +61,7 @@
     },
     {
         "n":7,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cUn viaje a la India antigua de la mano del poeta K\u0101lid\u0101sa\u201d.",
         "docente":"Gabriela M\u00fcller",
@@ -109,7 +109,7 @@
     },
     {
         "n":11,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cApuntes para ver un slasher Parte II. La venganza final.\u201d",
         "docente":"Canela Ailen Rodriguez Fontao <br> Mariana Soledad Zarate",
@@ -277,7 +277,7 @@
     },
     {
         "n":26,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"presencial",
         "titulo":"Curso \u201cLetras y fascismo. Exploraci\u00f3n de las relaciones <br>entre la ficci\u00f3n y la realidad del horror fascista\u201d",
         "docente":"Patrick Eser <br> Mariano Javier Sverdloff",
@@ -313,7 +313,7 @@
     },
     {
         "n":30,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cIntroducci\u00f3n a la diagramaci\u00f3n de contenidos.<br>Puesta en p\u00e1gina de publicaciones\u201d.",
         "docente":"Mariana Vidakovics De Victor",
