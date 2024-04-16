@@ -26,7 +26,7 @@
     {
         "n":4,
         "inscripcion":"abierta",
-        "modalidad":"presencial",
+        "modalidad":"virtual",
         "titulo":"Curso \u201c\u00bfC\u00f3mo explico gram\u00e1tica y sintaxis?<br>Herramientas te\u00f3ricas para docentes- Nivel 1\u201d",
         "docente":"Mar\u00eda Agustina Castells",
         "inicio":"7 de mayo",
@@ -38,7 +38,7 @@
     {
         "n":5,
         "inscripcion":"abierta",
-        "modalidad":"virtual",
+        "modalidad":"presencial",
         "titulo":"Curso \u201cIntroducci\u00f3n al psicodrama. Un dispositivo de transformaci\u00f3n<br> personal y social para intervenciones socio educativas\u201d.",
         "docente":"Mar\u00eda Soledad Manrique",
         "inicio":"20 de abril",
