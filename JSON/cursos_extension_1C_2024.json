@@ -1,7 +1,7 @@
 [
     {
         "n":1,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cMemoria, olvido patri\u00f3tico y recepci\u00f3n. <br>El caso de la Primera Guerra Maced\u00f3nica en las <br>Historias de Polibio y Ab Vrbe Condita de Tito Livio\u201d",
         "docente":"Ignacio Carral",
@@ -37,7 +37,7 @@
     },
     {
         "n":5,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"presencial",
         "titulo":"Curso \u201cIntroducci\u00f3n al psicodrama. Un dispositivo de transformaci\u00f3n<br> personal y social para intervenciones socio educativas\u201d.",
         "docente":"Mar\u00eda Soledad Manrique",
@@ -49,7 +49,7 @@
     },
     {
         "n":6,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cAlguien construye a Dios en la penumbra\u201d: <br>un acercamiento al concepto de absoluto en la filosof\u00eda<br>de Spinoza desde la Primera Parte de la \u00c9tica\u201d",
         "docente":"Natalia Sabater",
@@ -85,7 +85,7 @@
     },
     {
         "n":9,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cIntroducci\u00f3n a la cultura del Antiguo Egipto\u201d.",
         "docente":"Matias Alderete <br> Bruno Mendez",
@@ -97,7 +97,7 @@
     },
     {
         "n":10,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cLa pasi\u00f3n amorosa en la literatura helen\u00edstica\u201d.",
         "docente":"Mat\u00edas Ezequiel Pugh",
@@ -121,7 +121,7 @@
     },
     {
         "n":12,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"presencial",
         "titulo":"Curso \u201cIntroducci\u00f3n al estudio interdisciplinario<br>del uso de sustancias psicoactivas\u201d.",
         "docente":"Maximiliano Zeller",
@@ -205,7 +205,7 @@
     },
     {
         "n":19,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cEl que no salta... \u00bfes un ingl\u00e9s? El romanticismo ingl\u00e9s<br>en la cultura argentina\u201d",
         "docente":"Daniela Paolini <br> Mario Rucavado Rojas",
