@@ -181,7 +181,7 @@
     },
     {
         "n":17,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cAcercamiento a la China Imperial:<br>De los Xia a los Tres Reinos\u201d",
         "docente":"Alan Ivan Maciel",
@@ -217,7 +217,7 @@
     },
     {
         "n":20,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cAntropolog\u00eda de la(s) incertidumbre(s) en la<br>Argentina contempor\u00e1nea\u201d",
         "docente":"Mariano Perelman <br> Mar\u00eda Rosa Privitera Sixto",
