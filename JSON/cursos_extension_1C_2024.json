@@ -193,7 +193,7 @@
     },
     {
         "n":18,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cSafo en Roma: lecturas en torno a la recepci\u00f3n <br>de la poetisa de Lesbos en la poes\u00eda latina\u201d.",
         "docente":"Mariana Breijo",
@@ -289,7 +289,7 @@
     },
     {
         "n":27,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cDeconstruyendo Edici\u00f3n: aportes y<br>reflexiones desde una perspectiva de g\u00e9nero\u201d",
         "docente":"Roxana Mercedes Cardozo <br> Dana Tamara Rodriguez",
