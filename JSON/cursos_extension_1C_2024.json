@@ -157,7 +157,7 @@
     },
     {
         "n":15,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cDiscurso y verdad en la arqueolog\u00eda de<br>Michel Foucault: una introducci\u00f3n cr\u00edtica.\u201d.",
         "docente":"Ail\u00e9n Bembich",
@@ -241,7 +241,7 @@
     },
     {
         "n":22,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cIntroducci\u00f3n a la programaci\u00f3n con R\u201d",
         "docente":"Santiago Gualchi ",
