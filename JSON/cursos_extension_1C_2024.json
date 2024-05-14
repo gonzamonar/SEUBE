@@ -13,7 +13,7 @@
     },
     {
         "n":3,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201c\u00bfC\u00f3mo se aprende una lengua?<br>Herramientas te\u00f3ricas para docentes\u2026\u201d.",
         "docente":"Mar\u00eda Agustina Castells",
@@ -25,7 +25,7 @@
     },
     {
         "n":4,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201c\u00bfC\u00f3mo explico gram\u00e1tica y sintaxis?<br>Herramientas te\u00f3ricas para docentes- Nivel 1\u201d",
         "docente":"Mar\u00eda Agustina Castells",
@@ -145,7 +145,7 @@
     },
     {
         "n":14,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cEl peronismo en la imagen o c\u00f3mo problematizar<br>la historia desde las fuentes visuales\u201d",
         "docente":"Mar\u00eda Florencia Reyes Santiago",
@@ -169,7 +169,7 @@
     },
     {
         "n":16,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"presencial",
         "titulo":"Curso \u201cFascismo, resistencia, comunidades:<br>representaciones del Estado en el manga y anime\u201d.",
         "docente":"Genaro Gatti <br> Lucas Glasman",
@@ -325,7 +325,7 @@
     },
     {
         "n":31,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"presencial",
         "titulo":"Curso \u201cEl negacionismo del Genocidio Armenio<br>en discursos historiogr\u00e1ficos y literarios\u201d",
         "docente":"N\u00e9lida Boulgourdjian<br>Mart\u00edn Montenegro",
