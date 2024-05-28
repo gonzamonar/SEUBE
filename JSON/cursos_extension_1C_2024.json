@@ -133,7 +133,7 @@
     },
     {
         "n":13,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cDi\u00e1logos decoloniales. Una mirada emancipatoria<br>acerca de la lengua, la literatura y la educaci\u00f3n en Argentina\u201d",
         "docente":"M. Natalia Prunes <br> Leandro Pose",
@@ -301,7 +301,7 @@
     },
     {
         "n":28,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \u201cEntretenimiento y comunicaci\u00f3n p\u00fablica<br>de la ciencia. Propuestas desde la Arqueolog\u00eda.\u201d.",
         "docente":"Daniela \u00c1vido <br> Marcelo Vitores",
