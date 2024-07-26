@@ -94,9 +94,7 @@ function DrawHeader(curso){
 	let div_img = document.createElement("div");
 	div_img.className = "plus-container";
 	div_img.appendChild(plus_img);
-	div_title.appendChild(div_img);
-	
-	header_div.appendChild(div_title);
+	header_div.appendChild(div_img);
 	
 	return header_div;
 }
