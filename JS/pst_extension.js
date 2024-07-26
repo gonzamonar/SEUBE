@@ -146,7 +146,7 @@ function BuildRightColumn(parent, curso){
 }
 
 
-function CreateButton(parent, link="http://seube.filo.uba.ar/inscribite", tag="Inscribirse"){
+function CreateButton(parent, link, tag="Inscribirse"){
 	let btn_div = document.createElement("div");
 	btn_div.className = "btn_container";
 		
