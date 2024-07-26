@@ -22,6 +22,7 @@
 	text-transform: uppercase;
 	font-size: 12px;
 	display: flex;
+	margin: 0;
 	gap: 5px;
 }
 
@@ -34,6 +35,7 @@
 .title-container {
 	display: flex;
 	flex-direction: column;
+	gap: 5px;
 }
 
 .course_title {
@@ -143,7 +145,6 @@
 	padding: 15px 10px;
 	font-family: Georgia, serif;
 	text-align: center;
-	position: absolute;
 	transition: background-color 0.5s;
 }
 
