@@ -91,7 +91,11 @@ function DrawHeader(curso){
 	plus_img.setAttribute("id", idImg);
 	plus_img.setAttribute("draggable", false);
 	plus_img.className = "img_plus deploy";
-	header_div.appendChild(plus_img);
+	
+	let div_img = document.createElement("div");
+	div_img.className = "plus-container";
+	div_img.appendChild(plus_img);
+	header_div.appendChild(div_img);
 	
 	return header_div;
 }
