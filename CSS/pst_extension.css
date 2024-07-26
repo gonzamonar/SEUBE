@@ -21,23 +21,19 @@
 	font-family: 'Geogrotesque',sans-serif;
 	text-transform: uppercase;
 	font-size: 12px;
+	display: flex;
+	gap: 5px;
 }
 
 .course_info_slash {
 	display: inline-block;
 	color: #fff;
+	font-size: 13px;
 }
 
 .title-container {
 	display: flex;
-}
-
-.info-container {
-	display: flex;
-	width: 100%;
-	align-items: start;
-	justify-content: center;
-	gap: 5px;
+	flex-direction: column;
 }
 
 .course_title {
@@ -45,7 +41,7 @@
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 4px;
-	max-width: 600px;
+	width: 600px;
 }
 
 .plus-container {
