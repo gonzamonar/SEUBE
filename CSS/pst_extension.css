@@ -124,6 +124,35 @@
 	color: #404040;
 }
 
+.btn_container {
+	display: flex;
+	width: 100%;
+	margin-top: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.inscr_btn {
+	background-color: #db4e53;
+	border: 2px solid #db4e53;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 13px;
+	padding: 15px 10px;
+	font-family: Georgia, serif;
+	text-align: center;
+	position: absolute;
+	transition: background-color 0.5s;
+}
+
+.inscr_btn:hover {
+	background-color: #7aba53;
+	border: 2px solid #7aba53;
+	color: white;
+}
+
 .cuatri_title {
 	background-color: #659c44;
 	margin-top: 20px;
