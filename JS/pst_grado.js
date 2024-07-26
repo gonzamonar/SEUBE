@@ -76,12 +76,16 @@ function DrawHeader(curso){
     	});
 
 	CreateParagraph("course_title", curso.titulo, header_div);
-	
+
 	let plus_img = document.createElement("img");
 	plus_img.setAttribute("id", idImg);
 	plus_img.setAttribute("draggable", false);
 	plus_img.className = "img_plus deploy";
-	header_div.appendChild(plus_img);
+	
+	let div_img = document.createElement("div");
+	div_img.className = "plus-container";
+	div_img.appendChild(plus_img);
+	header_div.appendChild(div_img);
 	
 	return header_div;
 }
@@ -103,13 +107,18 @@ function DrawBody(curso){
 function BuildLeftColumn(parent, curso){
 	let leftCol = document.createElement("div");
 	leftCol.className = "left_column";
+
+	let programa = `<img src="/sites/seube.filo.uba.ar/files/u4/thumb_PDF.png" alt="PDF"
+		width="25" height="25" />&nbsp; <a style="color: #896c9a;"
+		href="${curso.programa}"
+		target="_blank"><span style="text-decoration: underline;">Programa</span></a>`;
 	
 	CreateField(leftCol, "FECHA DE INSCRIPCIÓN", curso.fecha_inscripcion);
 	CreateField(leftCol, "CURSADA", curso.cursada);
 	CreateField(leftCol, "LUGAR", curso.lugar);
 	CreateField(leftCol, "DOCENTES", curso.docentes);
 	CreateField(leftCol, "EQUIPO DOCENTE COLABORADOR", curso.equipo_docente);
-	CreateField(leftCol, "PROGRAMA", curso.programa);
+	CreateField(leftCol, "PROGRAMA", programa);
 	CreateField(leftCol, "CARRERAS", curso.carreras);
 	
 	parent.appendChild(leftCol);
