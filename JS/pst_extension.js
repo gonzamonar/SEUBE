@@ -1,5 +1,3 @@
-const YEAR = new Date().getFullYear();
-
 
 export async function CargarCursos(url_json, id_container="bloque_cursos"){
 	let json_file = await FetchDataAsync(url_json);
@@ -12,7 +10,7 @@ export async function CargarCursos(url_json, id_container="bloque_cursos"){
 
 
 class Curso {
-	constructor(n, asignatura, inscripcion, titulo, fecha_inscripcion, duracion, cursada, docentes, equipo_docente, lugar, destinatarios, modalidad, programa, presentacion) {
+	constructor(n, asignatura, inscripcion, titulo, fecha_inscripcion, duracion, cursada, docentes, equipo_docente, lugar, destinatarios, modalidad, programa, presentacion, link_inscripcion) {
 		this.n = parseInt(n);
 		this.asignatura = asignatura;
 		this.inscripcion = inscripcion;
