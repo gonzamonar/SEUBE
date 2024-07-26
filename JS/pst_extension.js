@@ -80,7 +80,7 @@ function DrawHeader(curso){
     	});
 
 	let div_title = document.createElement("div");
-	div_img.className = "title-container";
+	div_title.className = "title-container";
 
 	let slash_div = document.createElement("div");
 	slash_div.className = "info-container";
