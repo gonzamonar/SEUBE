@@ -81,17 +81,10 @@ function DrawHeader(curso){
 
 	let div_title = document.createElement("div");
 	div_title.className = "title-container";
-
-	let slash_div = document.createElement("div");
-	slash_div.className = "info-container";
-	CreateParagraph("course_info", curso.asignatura + " | " + curso.inscripcion.toUpperCase(), slash_div);
-	/*
-	CreateParagraph("course_info_slash", "|", slash_div);
-	CreateParagraph("course_info", "INSCRIPCIÓN " + curso.inscripcion.toUpperCase(), slash_div);
- 	*/
-	header_div.appendChild(slash_div);
-
+	
+	CreateParagraph("course_info", `${curso.asignatura}<span class='course_info_slash'>|</span>${curso.inscripcion.toUpperCase()}`, div_title);
 	CreateParagraph("course_title", curso.titulo, div_title);
+	header_div.appendChild(div_title);
 	
 	let plus_img = document.createElement("img");
 	plus_img.setAttribute("id", idImg);
