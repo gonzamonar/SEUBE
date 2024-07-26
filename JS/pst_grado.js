@@ -109,7 +109,7 @@ function BuildLeftColumn(parent, curso){
 	leftCol.className = "left_column";
 
 	let programa = `<img src="/sites/seube.filo.uba.ar/files/u4/thumb_PDF.png" alt="PDF"
-		width="25" height="25" />&nbsp; <a class="link"
+		width="25" height="25" />&nbsp; <a style="color: #896c9a;"
 		href="${curso.programa}" target="_blank">Programa</a>`;
 	
 	CreateField(leftCol, "FECHA DE INSCRIPCIÓN", curso.fecha_inscripcion);
