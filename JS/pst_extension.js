@@ -82,7 +82,7 @@ function DrawHeader(curso){
 	let div_title = document.createElement("div");
 	div_title.className = "title-container";
 	
-	CreateParagraphInnerHTML("course_info", `${curso.asignatura}<span class='course_info_slash'>|</span>${curso.inscripcion.toUpperCase()}`, div_title);
+	CreateParagraphInnerHTML("course_info", `${curso.asignatura}<span class='course_info_slash'>|</span>INSCRIPCIÓN ${curso.inscripcion.toUpperCase()}`, div_title);
 	CreateParagraph("course_title", curso.titulo, div_title);
 	header_div.appendChild(div_title);
 	
