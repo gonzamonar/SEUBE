@@ -11,7 +11,7 @@ export async function CargarCursos(url_json, id_container="bloque_cursos"){
 
 
 class Curso {
-	constructor(n, asignatura, inscripcion, titulo, fecha_inscripcion, duracion, cursada, docentes, equipo_docente, lugar, destinatarios, modalidad, programa, presentacion, link_inscripcion) {
+	constructor(n, asignatura, inscripcion, titulo, fecha_inscripcion, duracion, cursada, docentes, equipo_docente, lugar, destinatarios, modalidad, programa, presentacion, link) {
 		this.n = parseInt(n);
 		this.asignatura = asignatura;
 		this.inscripcion = inscripcion;
@@ -26,7 +26,7 @@ class Curso {
 		this.modalidad = modalidad;
 		this.programa = programa;
 		this.presentacion = presentacion;
-		this.link_inscripcion = link_inscripcion;
+		this.link = link;
 	}
 }
 
@@ -54,7 +54,7 @@ function ParseJson(json){
     let items = [];
     json.forEach(e => {
             let item;
-            item = new Curso(e.n, e.asignatura, e.inscripcion, e.titulo, e.fecha_inscripcion, e.duracion, e.cursada, e.docentes, e.equipo_docente, e.lugar, e.destinatarios, e.modalidad, e.programa, e.presentacion, e.link_inscripcion);
+            item = new Curso(e.n, e.asignatura, e.inscripcion, e.titulo, e.fecha_inscripcion, e.duracion, e.cursada, e.docentes, e.equipo_docente, e.lugar, e.destinatarios, e.modalidad, e.programa, e.presentacion, e.link);
             items.push(item);
     });
     return items;
@@ -142,7 +142,7 @@ function BuildRightColumn(parent, curso){
 	rightCol.className = "right_column";
 	
 	CreateField(rightCol, "PRESENTACIÓN", curso.presentacion, true, "presentation", "fieldtitle field16");
-	CreateButton(rightCol, curso.link_inscripcion);
+	CreateButton(rightCol, curso.link);
 	parent.appendChild(rightCol);
 }
 
