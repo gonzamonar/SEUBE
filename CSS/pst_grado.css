@@ -84,14 +84,6 @@
 	float: right;
 }
 
-.link {
-	color: #896c9a;
-}
-
-.link:hover {
-	text-decoration: underline;
-}
-
 .fieldtag {
 	padding: 10px 20px 10px 20px;
 }
