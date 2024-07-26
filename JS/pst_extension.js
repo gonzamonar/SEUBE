@@ -84,9 +84,11 @@ function DrawHeader(curso){
 
 	let slash_div = document.createElement("div");
 	slash_div.className = "info-container";
-	CreateParagraph("course_info", curso.asignatura, slash_div);
+	CreateParagraph("course_info", curso.asignatura + " | " + curso.inscripcion.toUpperCase(), slash_div);
+	/*
 	CreateParagraph("course_info_slash", "|", slash_div);
 	CreateParagraph("course_info", "INSCRIPCIÓN " + curso.inscripcion.toUpperCase(), slash_div);
+ 	*/
 	header_div.appendChild(slash_div);
 
 	CreateParagraph("course_title", curso.titulo, div_title);
