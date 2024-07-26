@@ -79,13 +79,17 @@ function DrawHeader(curso){
 		Deploy(idCurso, idImg);
     	});
 
+	let div_title = document.createElement("div");
+	div_img.className = "title-container";
+
 	let slash_div = document.createElement("div");
+	slash_div.className = "info-container";
 	CreateParagraph("course_info", curso.asignatura, slash_div);
 	CreateParagraph("course_info_slash", "|", slash_div);
 	CreateParagraph("course_info", "INSCRIPCIÓN " + curso.inscripcion.toUpperCase(), slash_div);
 	header_div.appendChild(slash_div);
 
-	CreateParagraph("course_title", curso.titulo, header_div);
+	CreateParagraph("course_title", curso.titulo, div_title);
 	
 	let plus_img = document.createElement("img");
 	plus_img.setAttribute("id", idImg);
@@ -95,7 +99,9 @@ function DrawHeader(curso){
 	let div_img = document.createElement("div");
 	div_img.className = "plus-container";
 	div_img.appendChild(plus_img);
-	header_div.appendChild(div_img);
+	div_title.appendChild(div_img);
+	
+	header_div.appendChild(div_title);
 	
 	return header_div;
 }
