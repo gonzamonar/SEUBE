@@ -50,7 +50,7 @@ function ParseJson(json){
     let items = [];
     json.forEach(e => {
             let item;
-            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.docente, e.inicio, e.fin, e.horario, e.link, e.presentacion);
+            item = new Curso(e.n, e.titulo, e.fecha_inscripcion, e.cursada, e.lugar, e.docentes, e.equipo_docente, e.programa, e.carreras, e.presentacion);
             items.push(item);
     });
     return items;
