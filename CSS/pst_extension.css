@@ -23,6 +23,12 @@
 	font-size: 12px;
 }
 
+.course_info_slash {
+	display: inline-block;
+	color: #fff;
+	padding-left: 5px;
+	padding-right: 5px;
+}
 
 .course_title {
 	font-size: 20px;
