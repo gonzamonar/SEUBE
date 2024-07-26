@@ -82,7 +82,7 @@ function DrawHeader(curso){
 	let div_title = document.createElement("div");
 	div_title.className = "title-container";
 	
-	CreateParagraph("course_info", `${curso.asignatura}<span class='course_info_slash'>|</span>${curso.inscripcion.toUpperCase()}`, div_title);
+	CreateParagraphInnerHTML("course_info", `${curso.asignatura}<span class='course_info_slash'>|</span>${curso.inscripcion.toUpperCase()}`, div_title);
 	CreateParagraph("course_title", curso.titulo, div_title);
 	header_div.appendChild(div_title);
 	
@@ -130,7 +130,7 @@ function BuildLeftColumn(parent, curso){
 	CreateField(leftCol, "LUGAR", curso.lugar);
 	CreateField(leftCol, "DESTINATARIOS", curso.destinatarios);
 	CreateField(leftCol, "MODALIDAD", curso.modalidad);
-    CreateField(leftCol, "PROGRAMA", programa);
+    	CreateField(leftCol, "PROGRAMA", programa);
 	
 	parent.appendChild(leftCol);
 }
@@ -191,6 +191,12 @@ function CreateParagraph(classname, textNode, parent){
 	parent.appendChild(p_element);
 }
 
+function CreateParagraphInnerHTML(classname, textNode, parent){
+	let p_element = document.createElement("p");
+	p_element.className = classname;
+	p_element.innerHTML = textNode;
+	parent.appendChild(p_element);
+}
 
 function Deploy(id_curso, id_img) {
 	ToggleClass($(id_curso), "hidden");
