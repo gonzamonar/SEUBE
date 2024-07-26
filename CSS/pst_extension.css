@@ -26,8 +26,18 @@
 .course_info_slash {
 	display: inline-block;
 	color: #fff;
-	padding-left: 5px;
-	padding-right: 5px;
+}
+
+.title-container {
+	display: flex;
+}
+
+.info-container {
+	display: flex;
+	width: 100%;
+	align-items: start;
+	justify-content: center;
+	gap: 5px;
 }
 
 .course_title {
