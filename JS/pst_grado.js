@@ -4,6 +4,7 @@ const YEAR = new Date().getFullYear();
 export async function CargarCursos(url_json, id_container="bloque_cursos"){
 	let json_file = await FetchDataAsync(url_json);
 	let cursos = ParseJson(json_file);
+	console.log(cursos);
 	
     	cursos.forEach(curso => {
 		DrawCourse(curso, id_container);
