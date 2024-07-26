@@ -153,7 +153,6 @@ function CreateField(parent, fieldtitle, fieldcontent, hastitle=true, contentCla
 }
 
 
-
 function CreateParagraph(classname, textNode, parent){
 	let p_element = document.createElement("p");
 	p_element.className = classname;
@@ -162,22 +161,8 @@ function CreateParagraph(classname, textNode, parent){
 }
 
 
-function CreateParagraphInnerHTML(classname, textNode, parent){
-	let p_element = document.createElement("p");
-	p_element.className = classname;
-	p_element.innerHTML = textNode;
-	parent.appendChild(p_element);
-}
-
-
-
 function Deploy(id_curso, id_img) {
 	ToggleClass($(id_curso), "hidden");
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
 }
-
-
-
-
-
