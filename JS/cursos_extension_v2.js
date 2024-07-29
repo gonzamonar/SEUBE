@@ -98,7 +98,7 @@ function DrawHeader(curso){
 	let div_title = document.createElement("div");
 	div_title.className = "title-container";
 	
-	CreateParagraphInnerHTML("course_info", `${curso.asignatura}<span class='course_info_slash'>|</span> ${curso.getStatus(YEAR)}`, div_title);
+	CreateParagraphInnerHTML("course_info", `CURSO Nº${curso.n}<span class='course_info_slash'>|</span> ${curso.getStatus(YEAR)}`, div_title);
 	CreateParagraph("course_title", curso.titulo, div_title);
 	header_div.appendChild(div_title);
 	
