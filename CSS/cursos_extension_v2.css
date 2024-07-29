@@ -65,13 +65,8 @@
 }
 
 .img_plus {
-	position: absolute;
-	display: inline-block;
-	right: 25px;
-	line-height: 85px;
 	width: 28px;
 	height: 28px;
-	position: absolute;
 }
 
 .img_plus.deploy {
