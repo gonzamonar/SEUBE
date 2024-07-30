@@ -169,7 +169,7 @@ function CreateButton(parent, link="http://seube.filo.uba.ar/inscribite", tag="I
 	let btn_div = document.createElement("div");
 	btn_div.className = "btn_container";
 	
-	let btn = document.createElement("button");
+	let btn = document.createElement("a");
 	btn.className = "inscr_btn";
 	btn.setAttribute("href", link);
 	btn.setAttribute("target", "_blank");
@@ -217,7 +217,6 @@ function CreateParagraphInnerHTML(classname, textNode, parent){
 
 function Deploy(id_curso, id_img) {
 	ChangePanelHeight(id_curso);
-	ToggleClass($(id_curso), "showed");
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
 }
@@ -226,7 +225,9 @@ function ChangePanelHeight(id_curso){
 	let panel = $(id_curso);
 	if (panel.style.maxHeight) {
 		panel.style.maxHeight = null;
+		ToggleClass($(id_curso), "showed");
 	} else {
+		ToggleClass($(id_curso), "showed");
 		panel.style.maxHeight = panel.scrollHeight + "px";
 	}
 }
