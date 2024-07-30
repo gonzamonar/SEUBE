@@ -218,11 +218,19 @@ function CreateParagraphInnerHTML(classname, textNode, parent){
 	parent.appendChild(p_element);
 }
 
-
 function Deploy(id_curso, id_img) {
-	ToggleClass($(id_curso), "hidden");
+	ChangePanelHeight(id_curso);
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
+}
+
+function ChangePanelHeight(id_curso){
+	let panel = $(id_curso);
+	if (panel.style.maxHeight) {
+		panel.style.maxHeight = null;
+	} else {
+		panel.style.maxHeight = panel.scrollHeight + "px";
+	}
 }
 
 function CreateFilter(id_container){
