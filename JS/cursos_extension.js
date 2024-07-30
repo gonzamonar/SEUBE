@@ -219,6 +219,7 @@ function CreateParagraphInnerHTML(classname, textNode, parent){
 }
 
 function Deploy(id_curso, id_img) {
+	ToggleClass($(id_curso), "hidden");
 	ChangePanelHeight(id_curso);
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
