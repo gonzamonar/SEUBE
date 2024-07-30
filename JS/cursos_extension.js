@@ -174,7 +174,6 @@ function CreateButton(parent, link="http://seube.filo.uba.ar/inscribite", tag="I
 	btn_a.setAttribute("href", link);
 	btn_a.setAttribute("target", "_blank");
 	btn_a.appendChild(document.createTextNode(tag));
-	btn_p.appendChild(btn_a);
 
 	parent.appendChild(btn_div);
 }
