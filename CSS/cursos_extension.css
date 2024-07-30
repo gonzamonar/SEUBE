@@ -78,12 +78,15 @@
 .course_content {
 	display: flex;
 	width: 100%;
-	border-style: inset;
-	border-width: 2px;
-	margin-bottom: 20px;
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height 0.2s ease-out;
+	transition: max-height 0.4s ease-in-out;
+}
+
+.course_content.showed {
+	margin-bottom: 20px;
+	border-style: inset;
+	border-width: 2px;
 }
 
 .left_column {
