@@ -133,7 +133,7 @@ function DrawBody(curso){
 
 	let body_div = document.createElement("div");
 	body_div.setAttribute("id", idCurso);
-	body_div.className = "course_content hidden";
+	body_div.className = "course_content";
 	BuildLeftColumn(body_div, curso);
 	BuildRightColumn(body_div, curso);
 	
@@ -168,11 +168,8 @@ function BuildRightColumn(parent, curso){
 function CreateButton(parent, link="http://seube.filo.uba.ar/inscribite", tag="Inscribirse"){
 	let btn_div = document.createElement("div");
 	btn_div.className = "btn_container";
-		
-	let btn_p = document.createElement("p");
-	btn_div.appendChild(btn_p);
 	
-	let btn_a = document.createElement("a");
+	let btn_a = document.createElement("button");
 	btn_a.className = "inscr_btn";
 	btn_a.setAttribute("href", link);
 	btn_a.setAttribute("target", "_blank");
@@ -219,7 +216,6 @@ function CreateParagraphInnerHTML(classname, textNode, parent){
 }
 
 function Deploy(id_curso, id_img) {
-	ToggleClass($(id_curso), "hidden");
 	ChangePanelHeight(id_curso);
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
