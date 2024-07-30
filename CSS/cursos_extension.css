@@ -81,10 +81,9 @@
 	border-style: inset;
 	border-width: 2px;
 	margin-bottom: 20px;
-}
-
-.course_content.hidden {
-	display: none;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
 
 .left_column {
