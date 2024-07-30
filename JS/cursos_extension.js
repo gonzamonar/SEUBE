@@ -169,11 +169,12 @@ function CreateButton(parent, link="http://seube.filo.uba.ar/inscribite", tag="I
 	let btn_div = document.createElement("div");
 	btn_div.className = "btn_container";
 	
-	let btn_a = document.createElement("button");
-	btn_a.className = "inscr_btn";
-	btn_a.setAttribute("href", link);
-	btn_a.setAttribute("target", "_blank");
-	btn_a.appendChild(document.createTextNode(tag));
+	let btn = document.createElement("button");
+	btn.className = "inscr_btn";
+	btn.setAttribute("href", link);
+	btn.setAttribute("target", "_blank");
+	btn.appendChild(document.createTextNode(tag));
+	btn_div.appendChild(btn);
 
 	parent.appendChild(btn_div);
 }
@@ -216,6 +217,7 @@ function CreateParagraphInnerHTML(classname, textNode, parent){
 
 function Deploy(id_curso, id_img) {
 	ChangePanelHeight(id_curso);
+	ToggleClass($(id_curso), "showed");
 	ToggleClass($(id_img), "deploy");
 	ToggleClass($(id_img), "reploy");
 }
