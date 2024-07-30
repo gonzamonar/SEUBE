@@ -225,10 +225,12 @@ function ChangePanelHeight(id_curso){
 	let panel = $(id_curso);
 	if (panel.style.maxHeight) {
 		panel.style.maxHeight = null;
-		ToggleClass($(id_curso), "showed");
+		setTimeout(() => {
+  			ToggleClass($(id_curso), "showed");
+		}, "400");
 	} else {
 		ToggleClass($(id_curso), "showed");
-		panel.style.maxHeight = (panel.scrollHeight + 100) + "px";
+		panel.style.maxHeight = (panel.scrollHeight + 150) + "px";
 	}
 }
 
