@@ -1,7 +1,7 @@
 [
     {
         "n":1,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"El cine como arma de clase: los movimientos cinematogr\u00e1ficos de izquierda en los a\u00f1os 20 y 30\"",
         "docente":"Mat\u00edas Leonardo Rivas",
@@ -25,7 +25,7 @@
     },
     {
         "n":3,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Historia y representaci\u00f3n en ficciones autobiogr\u00e1ficas l\u00e9sbicas. Aproximaciones a la literatura visual y narrativa.\"",
         "docente":"Clara In\u00e9s Arakaki Yasuda<br>Miranda Jacoby",
@@ -85,7 +85,7 @@
     },
     {
         "n":8,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Maestros del weird Trazos de la po\u00e9tica lovecraftiana en autores estadounidenses y brit\u00e1nico\"",
         "docente":"Thomas Schonfeld",
@@ -109,7 +109,7 @@
     },
     {
         "n":10,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Explorando La monta\u00f1a m\u00e1gica (1924) \u2013 a prop\u00f3sito del centenario de la novela de Thomas Mann.\"",
         "docente":"Dante Prado",
@@ -121,7 +121,7 @@
     },
     {
         "n":11,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Introducci\u00f3n a la elaboraci\u00f3n de textos en LATEX para humanidades\"",
         "docente":"Pablo Zdrojewski ",
@@ -133,7 +133,7 @@
     },
     {
         "n":12,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Acercamiento a los mitos griegos. \u00bfQu\u00e9 nos dicen?\"",
         "docente":"Carlos Bustos",
@@ -145,7 +145,7 @@
     },
     {
         "n":13,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"El pensamiento de R\u0101m\u0101nuja: Una puerta de acceso a la filosof\u00eda india\"",
         "docente":"Rosana Mart\u00edn",
@@ -193,7 +193,7 @@
     },
     {
         "n":17,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"presencial",
         "titulo":"Curso \"Leer a Dante en lengua original: estrategias, recursos, instrumentos.\"",
         "docente":"Claudia Fern\u00e1ndez Speier<br>Yamila Rossi",
@@ -217,7 +217,7 @@
     },
     {
         "n":19,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Una mirada al Medioevo desde Am\u00e9rica\"",
         "docente":"Gabriela Cipponeri<br>Samanta Dening",
@@ -241,7 +241,7 @@
     },
     {
         "n":21,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"El discurso multimodal y la ense\u00f1anza de lenguas extranjeras: desaf\u00edos, representaciones y pr\u00e1cticas\"",
         "docente":"Claudia Gaiotti<br>Agust\u00edn Arispe",
@@ -253,7 +253,7 @@
     },
     {
         "n":22,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"De las historietas \u201chist\u00f3ricas\u201d a la historia en historietas. Un enfoque del comic desde la historia y de la historia desde el c\u00f3mic.\"",
         "docente":"Facundo Bianchini",
@@ -277,7 +277,7 @@
     },
     {
         "n":24,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Kafka lesen \u2013 recepci\u00f3n del \u2018a\u00f1o Kafka 2024\u2019 en los debates culturales. Taller de lectura de textos en alem\u00e1n\"",
         "docente":"Patrick Eser ",
@@ -301,7 +301,7 @@
     },
     {
         "n":26,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Entrecruzamientos entre pol\u00edtica y est\u00e9tica. Acercamientos filos\u00f3ficos a la comunidad y la fiesta.\"",
         "docente":"Felipe Arias Vazquez<br>Octavia Medrano",
@@ -313,7 +313,7 @@
     },
     {
         "n":27,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"El di\u00e1logo plat\u00f3nico como modelo deindagaci\u00f3n. El caso del Men\u00f3n.\"",
         "docente":" Flavia Gioia",
