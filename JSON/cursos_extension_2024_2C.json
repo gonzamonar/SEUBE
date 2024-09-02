@@ -13,7 +13,7 @@
     },
     {
         "n":2,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"An\u00e1lisis del Discurso en la Obra de Horacio: Explorando los G\u00e9neros Discursivos en la Literatura Cl\u00e1sica\"",
         "docente":"Ileana Kleinman ",
@@ -37,7 +37,7 @@
     },
     {
         "n":4,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"\u00bfC\u00f3mo explico gram\u00e1tica y sintaxis? Herramientas te\u00f3ricas para docentes- Nivel 2\"",
         "docente":"Mar\u00eda Agustina Castells",
@@ -181,7 +181,7 @@
     },
     {
         "n":16,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Introducci\u00f3n a la Historia de China Contempor\u00e1nea I (1842-1950)\"",
         "docente":"Alan Ivan Maciel",
@@ -205,7 +205,7 @@
     },
     {
         "n":18,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Escritura de la vida de las mujeres. Victorianismo, novela de formaci\u00f3n y utop\u00eda.\"",
         "docente":"Melanie Umerez<br>Fiorela Mestres",
@@ -229,7 +229,7 @@
     },
     {
         "n":20,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Animales y animalidad en la Edad Media\"",
         "docente":"Andrea Vanina Neyra",
@@ -289,7 +289,7 @@
     },
     {
         "n":25,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"presencial",
         "titulo":"Curso \"Criminolog\u00eda y est\u00e9tica Noir: Una historia para estos d\u00edas\"",
         "docente":"Luciano P\u00e9r\u00e9s",
