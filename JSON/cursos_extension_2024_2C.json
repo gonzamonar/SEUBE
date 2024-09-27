@@ -49,7 +49,7 @@
     },
     {
         "n":5,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Introducci\u00f3n a la planificaci\u00f3n de expediciones cient\u00edficas y deportivas de alta monta\u00f1a\"",
         "docente":"Ricardo Apaolaza",
@@ -97,7 +97,7 @@
     },
     {
         "n":9,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Dialogo arte-pol\u00edtica: una aproximaci\u00f3n culturol\u00f3gica a las producciones est\u00e9tico- art\u00edsticas del primer peronismo y el menemismo\"",
         "docente":"Diego Massariol<br>Daniela Saco",
@@ -157,7 +157,7 @@
     },
     {
         "n":14,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Una introducci\u00f3n a los sofistas.\"",
         "docente":"Camilo Lautaro Arroyo",
