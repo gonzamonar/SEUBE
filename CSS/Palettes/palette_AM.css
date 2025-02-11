@@ -60,3 +60,23 @@ h3 {
     background-color: #ffffff;
     color: #00846a;
 }
+
+.convocatoria-blue {
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 80%;
+    margin: 30px 0px 30px 10%;
+    font-size: large;
+    background-color: #293371;
+    border: 1px solid #293371;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.convocatoria-green:hover {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #293371;
+}
