@@ -61,6 +61,12 @@ h3 {
     color: #00846a;
 }
 
+convocatoria-small {
+    width: 40% !important;
+    margin-left: 30% !important;
+    font-size: 15px !important;
+}
+
 .convocatoria-blue {
     transition: all 0.3s ease-in-out;
     text-align: center;
