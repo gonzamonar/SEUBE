@@ -1,5 +1,3 @@
-const YEAR = new Date().getFullYear();
-
 
 export async function CargarCursos(url_json, id_container="bloque_cursos"){
 	let json_file = await FetchDataAsync(url_json);
@@ -59,6 +57,7 @@ function ParseJson(json){
 
 function DrawCourse(curso, id_container){
 	let header = DrawHeader(curso);
+	console.log(header);
 	let body = DrawBody(curso);
 	
 	$(id_container).appendChild(header);
@@ -68,6 +67,8 @@ function DrawCourse(curso, id_container){
 function DrawHeader(curso){
 	let idCurso = 'curso' +curso.n;
 	let idImg = 'plus' +curso.n;
+
+	console.log(idCurso);
 
 	let header_div = document.createElement("div");
 	header_div.className = "course_heading";
