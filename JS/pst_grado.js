@@ -5,7 +5,6 @@ export async function CargarCursos(url_json, id_container="bloque_cursos"){
 	console.log(cursos);
 	
     	cursos.forEach(curso => {
-		console.log(id_container);
 		DrawCourse(curso, id_container);
    	});
 }
@@ -58,10 +57,8 @@ function ParseJson(json){
 
 function DrawCourse(curso, id_container){
 	let header = DrawHeader(curso);
-	console.log(header);
 	let body = DrawBody(curso);
 
-	console.log($(id_container));
 	$(id_container).appendChild(header);
 	$(id_container).appendChild(body);
 }
@@ -69,8 +66,6 @@ function DrawCourse(curso, id_container){
 function DrawHeader(curso){
 	let idCurso = 'curso' +curso.n;
 	let idImg = 'plus' +curso.n;
-
-	console.log(idCurso);
 
 	let header_div = document.createElement("div");
 	header_div.className = "course_heading";
