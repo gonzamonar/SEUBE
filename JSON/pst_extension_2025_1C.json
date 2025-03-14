@@ -2,7 +2,7 @@
     {
         "n":1,
         "asignatura":"PST",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":" Producci\u00f3n de proyectos culturales en el Centro Cultural Universitario \u201cPaco Urondo\u201d",
         "fecha_inscripcion":"27\/02\/2025 al 07\/03\/2025",
         "duracion":"17\/03\/2025 al 28\/06\/2025",
@@ -38,7 +38,7 @@
     {
         "n":3,
         "asignatura":"PST",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":"Investigaci\u00f3n, ense\u00f1anza y divulgaci\u00f3n en el aula museo de la escuela N\u00b0 2",
         "fecha_inscripcion":"27\/02\/2025 al 07\/03\/2025",
         "duracion":"17\/03\/2025 al 28\/06\/2025",
@@ -56,7 +56,7 @@
     {
         "n":4,
         "asignatura":"PST",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":"El malestar en la investigaci\u00f3n: lo imaginario, lo simb\u00f3lico y lo real en la historia de la APBA",
         "fecha_inscripcion":"27\/02\/2025 al 07\/03\/2025",
         "duracion":"17\/03\/2025 al 28\/06\/2025",
@@ -74,7 +74,7 @@
     {
         "n":5,
         "asignatura":"PST",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":"El derecho a la lectura: Acciones en y desde la biblioteca del ISFD Dora Acosta",
         "fecha_inscripcion":"27\/02\/2025 al 07\/03\/2025",
         "duracion":"17\/03\/2025 al 28\/06\/2025",
@@ -92,7 +92,7 @@
     {
         "n":6,
         "asignatura":"PST",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":"Curadur\u00eda y gesti\u00f3n de artes visuales. Pr\u00e1cticas en la escena de Buenos Aires",
         "fecha_inscripcion":"27\/02\/2025 al 07\/03\/2025",
         "duracion":"17\/03\/2025 al 28\/06\/2025",
@@ -110,7 +110,7 @@
     {
         "n":7,
         "asignatura":"SEM EDUC",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":"Procesos de alfabetizaci\u00f3n inicial en personas j\u00f3venes y adultas: Una mirada epistemol\u00f3gica constructivista y de educaci\u00f3n popular",
         "fecha_inscripcion":"27\/02\/2025 al 07\/03\/2025",
         "duracion":"17\/03\/2025 al 28\/06\/2025",
@@ -128,7 +128,7 @@
     {
         "n":8,
         "asignatura":"PROY EDUC",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":"Introducci\u00f3n al psicodrama. Un dispositivo de transformaci\u00f3n personal y social para intervenciones psico-socio educativas",
         "fecha_inscripcion":"27\/02\/2025 al 07\/03\/2025",
         "duracion":"17\/03\/2025 al 28\/06\/2025",
