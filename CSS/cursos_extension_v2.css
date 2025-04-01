@@ -182,6 +182,15 @@
 	padding: 15px;
 }
 
+.filter_container_2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: #f0f0f0;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
 .filter_lbl {
 	font-size: 15px;
 	color: #404040;
