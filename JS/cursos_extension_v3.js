@@ -286,9 +286,9 @@ function ApplyFilterInscripcion(){
 function ApplyFilterModalidad(){
     ClearFilter();
     if ($("filtro_modalidad").value == "0"){
-        Filter(FilterPresencial);
-    } else if  ($("filtro_modalidad").value == "1") {
         Filter(FilterVirtual);
+    } else if  ($("filtro_modalidad").value == "1") {
+        Filter(FilterPresencial);
     }
 }
 
