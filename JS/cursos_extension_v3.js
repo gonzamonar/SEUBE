@@ -13,7 +13,7 @@ export async function CargarCursos(url_json, id_container = "bloque_cursos"){
 }
 
 class Curso {
-	constructor(n, inscripcion, modalidad, titulo, docente, inicio, fin, horario, link, presentacion) {
+	constructor(n, inscripcion, modalidad, titulo, docente, inicio, fin, horario, programa, carga, arancel, link, presentacion) {
 		this.n = parseInt(n);
 		this.inscripcion = inscripcion;
 		this.modalidad = modalidad;
@@ -22,6 +22,9 @@ class Curso {
 		this.inicio = inicio;
 		this.fin = fin;
 		this.horario = horario;
+		this.programa = programa;
+		this.carga = carga;
+		this.arancel = arancel;
 		this.link = link;
 		this.presentacion = presentacion;
 	}
@@ -60,7 +63,7 @@ function ParseJson(json){
     let items = [];
     json.forEach(e => {
             let item;
-            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.docente, e.inicio, e.fin, e.horario, e.link, e.presentacion);
+            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.docente, e.inicio, e.fin, e.horario, e.programa, e.carga, e.arancel, e.link, e.presentacion);
             items.push(item);
     });
     return items;
@@ -131,12 +134,18 @@ function BuildLeftColumn(parent, curso){
 	let leftCol = document.createElement("div");
 	leftCol.className = "left_column";
 	
+	let programa = `<img src="/sites/seube.filo.uba.ar/files/u4/thumb_PDF.png" alt="PDF"
+		width="25" height="25" />&nbsp; <a style="color: #d00e0b;"
+		href="${curso.programa}" target="_blank">Programa</a>`;
+	
 	CreateField(leftCol, "", "CURSO Nº"+curso.n, false, "course_number");
 	CreateField(leftCol, "DOCENTE", curso.docente);
 	CreateField(leftCol, "FECHA DE INICIO", curso.inicio);
 	CreateField(leftCol, "FECHA DE FINALIZACIÓN", curso.fin);
 	CreateField(leftCol, "DÍA Y HORARIO", curso.horario);
-	CreateField(leftCol, "ARANCEL", "Gratuito");
+	CreateField(leftCol, "PROGRAMA", programa);
+	CreateField(leftCol, "CARGA HORARIA", curso.carga);
+	CreateField(leftCol, "ARANCEL", curso.arancel);
 	parent.appendChild(leftCol);
 }
 
@@ -336,4 +345,3 @@ function FilterPresencial(element){
 function FilterVirtual(element){
     return element.classList.contains("virtual")
 }
-
