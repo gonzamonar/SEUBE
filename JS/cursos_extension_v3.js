@@ -214,6 +214,7 @@ function Deploy(id_curso, id_img) {
 
 function CreateFilters(id_container){
 	let filter_div = document.createElement("div");
+	filter_div.setAttribute("id", "filter_div");
 	filter_div.className = "filter_container";
 	
 	CreateFilterInscripcion(id_container);
@@ -251,7 +252,7 @@ function CreateFilterInscripcion(id_container){
 	filter_select.appendChild(option3);
 	
 	filter_div.appendChild(filter_select);
-    $("filter_container").appendChild(filter_div);
+    $("filter_div").appendChild(filter_div);
 }
 
 function CreateFilterModalidad(id_container){
@@ -282,7 +283,7 @@ function CreateFilterModalidad(id_container){
 	filter_select.appendChild(option3);
 	
 	filter_div.appendChild(filter_select);
-    $("filter_container").appendChild(filter_div);
+    $("filter_div").appendChild(filter_div);
 }
 
 function ApplyFilterInscripcion(){
