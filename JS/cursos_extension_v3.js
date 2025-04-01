@@ -5,8 +5,7 @@ export async function CargarCursos(url_json, id_container = "bloque_cursos"){
 	let json_file = await FetchDataAsync(url_json);
 	let cursos = ParseJson(json_file);
 	
-	CreateFilterInscripcion(id_container);
-	CreateFilterModalidad(id_container);
+	CreateFilters(id_container);
 	
 	cursos.forEach(curso => {
 		DrawCourse(curso, id_container);
@@ -97,7 +96,7 @@ function DrawHeader(curso){
 	let div_title = document.createElement("div");
 	div_title.className = "title-container";
 	
-	CreateParagraphInnerHTML("course_info", `${curso.n}<span class='course_info_slash'>|</span> ${curso.getStatus(YEAR)}`, div_title);
+	CreateParagraphInnerHTML("course_info", `Curso N°${curso.n}<span class='course_info_slash'>|</span> ${curso.getStatus(YEAR)}`, div_title);
 	CreateParagraph("course_title", curso.titulo, div_title);
 	header_div.appendChild(div_title);
 	
@@ -212,9 +211,22 @@ function Deploy(id_curso, id_img) {
 	ToggleClass($(id_img), "reploy");
 }
 
-function CreateFilterInscripcion(id_container){
+
+function CreateFilters(id_container){
 	let filter_div = document.createElement("div");
 	filter_div.className = "filter_container";
+	
+	CreateFilterInscripcion(id_container);
+	CreateFilterModalidad(id_container);
+	
+	$(id_container).appendChild(filter_div);
+}
+
+
+function CreateFilterInscripcion(id_container){
+	let filter_div = document.createElement("div");
+	filter_div.className = "filter_inscripcion";
+	
 	CreateParagraph("filter_lbl", "Estado de Inscripción", filter_div);
 	
 	let filter_select = document.createElement("select");
@@ -239,8 +251,7 @@ function CreateFilterInscripcion(id_container){
 	filter_select.appendChild(option3);
 	
 	filter_div.appendChild(filter_select);
-	
-	$(id_container).appendChild(filter_div);
+    $(id_container).appendChild(filter_div);
 }
 
 function CreateFilterModalidad(id_container){
@@ -270,8 +281,7 @@ function CreateFilterModalidad(id_container){
 	filter_select.appendChild(option3);
 	
 	filter_div.appendChild(filter_select);
-	
-	$(id_container).appendChild(filter_div);
+    $(id_container).appendChild(filter_div);
 }
 
 function ApplyFilterInscripcion(){
@@ -325,6 +335,5 @@ function FilterPresencial(element){
 function FilterVirtual(element){
     return element.classList.contains("virtual")
 }
-
 
 
