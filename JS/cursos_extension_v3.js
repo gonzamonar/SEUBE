@@ -215,7 +215,7 @@ function Deploy(id_curso, id_img) {
 function CreateFilters(id_container){
 	let filter_div = document.createElement("div");
 	filter_div.setAttribute("id", "filter_div");
-	filter_div.className = "filter_container";
+	filter_div.className = "filter_container_2";
 	$(id_container).appendChild(filter_div);
 	
 	CreateFilterInscripcion(id_container);
