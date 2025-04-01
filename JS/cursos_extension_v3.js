@@ -251,12 +251,13 @@ function CreateFilterInscripcion(id_container){
 	filter_select.appendChild(option3);
 	
 	filter_div.appendChild(filter_select);
-    $(id_container).appendChild(filter_div);
+    $("filter_container").appendChild(filter_div);
 }
 
 function CreateFilterModalidad(id_container){
 	let filter_div = document.createElement("div");
-	filter_div.className = "filter_container";
+	filter_div.className = "filter_modalidad";
+	
 	CreateParagraph("filter_lbl", "Modalidad del curso", filter_div);
 	
 	let filter_select = document.createElement("select");
@@ -281,7 +282,7 @@ function CreateFilterModalidad(id_container){
 	filter_select.appendChild(option3);
 	
 	filter_div.appendChild(filter_select);
-    $(id_container).appendChild(filter_div);
+    $("filter_container").appendChild(filter_div);
 }
 
 function ApplyFilterInscripcion(){
@@ -335,5 +336,3 @@ function FilterPresencial(element){
 function FilterVirtual(element){
     return element.classList.contains("virtual")
 }
-
-
