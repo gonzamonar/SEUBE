@@ -216,11 +216,10 @@ function CreateFilters(id_container){
 	let filter_div = document.createElement("div");
 	filter_div.setAttribute("id", "filter_div");
 	filter_div.className = "filter_container";
+	$(id_container).appendChild(filter_div);
 	
 	CreateFilterInscripcion(id_container);
 	CreateFilterModalidad(id_container);
-	
-	$(id_container).appendChild(filter_div);
 }
 
 
@@ -337,3 +336,4 @@ function FilterPresencial(element){
 function FilterVirtual(element){
     return element.classList.contains("virtual")
 }
+
