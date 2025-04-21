@@ -126,12 +126,16 @@ function BuildLeftColumn(parent, curso){
 	let programa = `<img src="/sites/seube.filo.uba.ar/files/u4/thumb_PDF.png" alt="PDF"
 		width="25" height="25" />&nbsp; <a style="color: #d00e0b;"
 		href="${curso.programa}" target="_blank">Programa</a>`;
-		
-	CreateField(leftCol, "FECHA DE INSCRIPCIÓN", curso.fecha_inscripcion);
+
+	if (curso.fecha_inscripcion != null && curso.fecha_inscripcion != "-") {
+		CreateField(leftCol, "FECHA DE INSCRIPCIÓN", curso.fecha_inscripcion);
+	}
 	CreateField(leftCol, "DURACIÓN", curso.duracion);
 	CreateField(leftCol, "CURSADA", curso.cursada);
 	CreateField(leftCol, "DOCENTES", curso.docentes);
-	CreateField(leftCol, "EQUIPO DOCENTE", curso.equipo_docente);
+	if (curso.equipo_docente != null && curso.equipo_docente != "-") {
+		CreateField(leftCol, "EQUIPO DOCENTE", curso.equipo_docente);
+	}
 	CreateField(leftCol, "LUGAR", curso.lugar);
 	CreateField(leftCol, "DESTINATARIOS", curso.destinatarios);
 	CreateField(leftCol, "MODALIDAD", curso.modalidad);
