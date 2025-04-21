@@ -53,7 +53,7 @@
     {
         "n":4,
         "asignatura":"CCLL Walter Benjamin",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":"Literaturas y mitos pol\u00edticos de las derechas en ficci\u00f3n, ensayo y debate intelectual (presencial)",
         "fecha_inscripcion":null,
         "duracion":"16\/4 al 11\/6",
@@ -65,6 +65,23 @@
         "modalidad":"Presencial",
         "programa":"https:\/\/drive.google.com\/file\/d\/1R4qlK2HE2_b7g3LJQXp1YhWWlM7jptBt\/view?usp=sharing",
         "presentacion":"El seminario explora c\u00f3mo las literaturas de las derechas han contribuido a la \u00abfascistizaci\u00f3n de las mentes\u00bb, oponi\u00e9ndose a la emancipaci\u00f3n pol\u00edtica, la democracia y la igualdad. A trav\u00e9s de un corpus te\u00f3rico y literario de Europa y Latinoam\u00e9rica, se analizar\u00e1n sus estrategias narrativas y su relaci\u00f3n ambivalente con la modernidad. A partir de un intento de definir el campo de estudio de las \u2018literaturas de las derechas\u2019 se abordar\u00e1n t\u00f3picos como jerarqu\u00eda, decadencia y comunidad org\u00e1nica, as\u00ed como el papel central del mito en la construcci\u00f3n de estos discursos.",
+        "link":"https:\/\/seube.filo.uba.ar\/inscripci%C3%B3n-cursos-de-equipos-y-programas-de-extensi%C3%B3n"
+    },
+    {
+        "n":5,
+        "asignatura":"CCLL Estudios Armenios",
+        "inscripcion":"abierta",
+        "titulo":"El Genocidio Armenio. Pasado y presente de un exterminio sin fin",
+        "fecha_inscripcion":null,
+        "duracion":"29\/4 al 17\/6",
+        "cursada":"Martes de 18 a 20 hs",
+        "docentes":"N\u00e9lida Boulgourdjian <br\/>Mart\u00edn Montenegro Abazy\u00e1n",
+        "equipo_docente":"-",
+        "lugar":"Aula 240, Puan 480 (CABA)",
+        "destinatarios":"Toda persona interesada en la tem\u00e1tica. Estudiantes, graduados o docentes de tem\u00e1ticas afines, miembros del Poder Judicial y de la administraci\u00f3n p\u00fablica en general que pueda interesarle la propuesta.",
+        "modalidad":"Presencial",
+        "programa":"https:\/\/docs.google.com\/document\/d\/1l838vmjJVCvjQuLBIoODOJDMuAXArsLJ\/edit?usp=sharing&ouid=111874055011151196222&rtpof=true&sd=true",
+        "presentacion":"El Seminario propuesto se propone analizar el Genocidio armenio como un caso paradigm\u00e1tico de Estados que en lugar de proteger y garantizar la seguridad, igualdad y cuidado de su poblaci\u00f3n, se convierten en perpetrador de los cr\u00edmenes m\u00e1s aberrantes contra su propia poblaci\u00f3n. El eje central del seminario es trabajar en torno al Genocidio Armenio observando la actualidad de dicho problema, evidente a partir de la guerra de 2020 entre la Rep\u00fablica de Artsaj y de Azerbaiy\u00e1n. Se parte del caso armenio como modelo de exterminio sistem\u00e1tico de la modernidad que inspir\u00f3 la creaci\u00f3n del concepto jur\u00eddico de Genocidio, aplicado el caso del Holocausto jud\u00edo durante el juicio a los nazis.",
         "link":"https:\/\/seube.filo.uba.ar\/inscripci%C3%B3n-cursos-de-equipos-y-programas-de-extensi%C3%B3n"
     }
 ]
