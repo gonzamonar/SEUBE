@@ -46,7 +46,7 @@
     },
     {
         "n":7,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Desigualdad, la madre de todas las batallas. Su devenir desde la dictadura hasta el presente.\"",
         "docente":"Santilli, Daniel",
@@ -76,7 +76,7 @@
     },
     {
         "n":11,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Pensando la pol\u00edtica desde la filosof\u00eda: entre lo justo y lo igual\"",
         "docente":"Avena, Mar\u00eda Emilia<br>Tabakian, Diego Alejandro",
@@ -91,7 +91,7 @@
     },
     {
         "n":14,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Descubriendo Catalu\u00f1a: an\u00e1lisis de sus or\u00edgenes hasta nuestros d\u00edas\"",
         "docente":"Pucciarelli Nazareth",
@@ -106,7 +106,7 @@
     },
     {
         "n":15,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Morfolog\u00eda del mito \"",
         "docente":"Rossi Leandro Sebasti\u00e1n<br>Mar\u00eda Cecilia",
@@ -121,7 +121,7 @@
     },
     {
         "n":17,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Introducci\u00f3n a la lengua egipcia y la escritura jerogl\u00edfica\"",
         "docente":"Bosio, Emilio Sebasti\u00e1n",
