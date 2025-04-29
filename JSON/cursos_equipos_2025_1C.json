@@ -19,7 +19,7 @@
     {
         "n":2,
         "asignatura":"CCLL Estudios Griegos",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":"Ellas (des)esperan: la subjetividad femenina en la tragedia griega",
         "fecha_inscripcion":null,
         "duracion":"28\/4 al 14\/6",
@@ -70,7 +70,7 @@
     {
         "n":5,
         "asignatura":"CCLL Estudios Armenios",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":"El Genocidio Armenio. Pasado y presente de un exterminio sin fin",
         "fecha_inscripcion":null,
         "duracion":"29\/4 al 17\/6",
