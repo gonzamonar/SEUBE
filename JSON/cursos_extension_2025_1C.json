@@ -136,7 +136,7 @@
     },
     {
         "n":18,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"El g\u00e9nero de terror en las aulas\"",
         "docente":"Duran Facundo Joaqu\u00ecn",
@@ -181,7 +181,7 @@
     },
     {
         "n":22,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Historia de pensamiento nacional y latinoamericano\"",
         "docente":"Liaudat, Santigo<br>Cambiaggi, Mat\u00edas",
