@@ -1,7 +1,7 @@
 [
     {
         "n":2,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"\u00bfC\u00f3mo se cocina una naci\u00f3n? Una historia social de la comida en Argentina.\"",
         "docente":"Juan Francisco Olsen",
@@ -226,7 +226,7 @@
     },
     {
         "n":25,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"presencial",
         "titulo":"Curso \"Concepciones latinoamericanas de sujeto: aproximaciones desde Enrique Dussel y Mar\u00eda Lugones\"",
         "docente":"Garcia, Julieta Agustina",
@@ -241,7 +241,7 @@
     },
     {
         "n":26,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Coleccionismo y mecenazgo art\u00edstico en el Renacimiento\"",
         "docente":"Lo Russo, Alejo Gabriel",
