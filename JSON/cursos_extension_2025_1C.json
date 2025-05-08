@@ -16,7 +16,7 @@
     },
     {
         "n":5,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Introducci\u00f3n a la Historia del Pensamiento Latinoamericano\"",
         "docente":"Juan Francisco Martinez Peria",
@@ -196,7 +196,7 @@
     },
     {
         "n":23,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"La filosof\u00eda secreta de los hongos: Una introducci\u00f3n a la exploraci\u00f3n de la mente, la naturaleza y lo sagrado a trav\u00e9s del reino fungi\"",
         "docente":"Zeller, Maximiliano",
@@ -211,7 +211,7 @@
     },
     {
         "n":24,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"De eso no se habla: las experiencias l\u00edmites y el tab\u00fa en la literatura infantil\"",
         "docente":"Mu\u00f1eza Mar\u00eda Soledad<br>Soledad Gabriela Mart\u00edn ",
