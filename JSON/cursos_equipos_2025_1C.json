@@ -70,7 +70,7 @@
     {
         "n":5,
         "asignatura":"CCLL Estudios Armenios",
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "titulo":"El Genocidio Armenio. Pasado y presente de un exterminio sin fin",
         "fecha_inscripcion":null,
         "duracion":"29\/4 al 17\/6",
@@ -82,6 +82,23 @@
         "modalidad":"Virtual",
         "programa":"https:\/\/docs.google.com\/document\/d\/1l838vmjJVCvjQuLBIoODOJDMuAXArsLJ\/edit?usp=sharing&ouid=111874055011151196222&rtpof=true&sd=true",
         "presentacion":"El Seminario propuesto se propone analizar el Genocidio armenio como un caso paradigm\u00e1tico de Estados que en lugar de proteger y garantizar la seguridad, igualdad y cuidado de su poblaci\u00f3n, se convierten en perpetrador de los cr\u00edmenes m\u00e1s aberrantes contra su propia poblaci\u00f3n. El eje central del seminario es trabajar en torno al Genocidio Armenio observando la actualidad de dicho problema, evidente a partir de la guerra de 2020 entre la Rep\u00fablica de Artsaj y de Azerbaiy\u00e1n. Se parte del caso armenio como modelo de exterminio sistem\u00e1tico de la modernidad que inspir\u00f3 la creaci\u00f3n del concepto jur\u00eddico de Genocidio, aplicado el caso del Holocausto jud\u00edo durante el juicio a los nazis.",
+        "link":"https:\/\/seube.filo.uba.ar\/inscripci%C3%B3n-cursos-de-equipos-y-programas-de-extensi%C3%B3n"
+    },
+    {
+        "n":6,
+        "asignatura":"Posdoctorado Filo:UBA",
+        "inscripcion":"abierta",
+        "titulo":"Los monstruos del Mercado. El marxismo G\u00f3tico y la literatura de terror",
+        "fecha_inscripcion":"13\/05\/2025 al 28\/05\/2025",
+        "duracion":"30\/5 al 4\/7",
+        "cursada":"Jueves de 14 a 16 hs",
+        "docentes":"Juan Pedro Rojas",
+        "equipo_docente":"-",
+        "lugar":"-",
+        "destinatarios":"Estudiantes, graduados\/as o docentes de carreras vinculadas a las humanidades",
+        "modalidad":"Virtual sincr\u00f3nico",
+        "programa":"https:\/\/drive.google.com\/file\/d\/1iClhhgPS1MCTd0dCi8MfvpNSAaCQgiSL\/view?usp=drive_link",
+        "presentacion":"El mini curso de seis clases hace un mapeo de los imaginarios resultantes de entender al sistema capitalista en su monstruosidad, tal y como lo expuso Marx en sus textos. Las met\u00e1foras marxianas han trascendido tambi\u00e9n al arte, la pintura, la escultura, la literatura y el cine de diversas formas desde el advenimiento y consolidaci\u00f3n del sistema capitalista. Surgieron estudios inspirados en esta poderosa met\u00e1fora que con el tiempo se dieron en llamar Marxismo g\u00f3tico. Visitaremos adem\u00e1s de la obra de Marx, su aparici\u00f3n en un primer momento en el cine de comienzos de siglo, con los cuerpos mutilados, de Frankenstein (David McNally), los vampiros del cine prehitleriano alem\u00e1n analizados por Kracauer, el an\u00e1lisis del surrealismo; la cuesti\u00f3n de la embriaguez de la revoluci\u00f3n y en Walter Benjamin, el Gore y el auge del capitalismo, la literatura de terror en Estados Unidos a trav\u00e9s del an\u00e1lisis de Miguel Vedda, as\u00ed como algunas manifestaciones de lo g\u00f3tico y lo gore en la literatura latinoamericana actual. Y, lo m\u00e1s importante, analizaremos obras de arte, literatura y cine para intentar entender las cuestiones planteadas.",
         "link":"https:\/\/seube.filo.uba.ar\/inscripci%C3%B3n-cursos-de-equipos-y-programas-de-extensi%C3%B3n"
     }
 ]
