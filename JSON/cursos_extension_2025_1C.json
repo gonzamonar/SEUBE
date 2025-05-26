@@ -286,7 +286,7 @@
     },
     {
         "n":31,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Los viajes de El Eternauta como narrativa transmedia. Del follet\u00edn al streaming.\"",
         "docente":"Giordanino Eduardo Pablo<br>Valenzuela Mart\u00edn",
@@ -331,7 +331,7 @@
     },
     {
         "n":36,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"presencial",
         "titulo":"Curso \"Breve historia de la Iglesia en la Edad Media\"",
         "docente":"Can\u00e9, Gonzalo",
