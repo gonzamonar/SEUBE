@@ -89,7 +89,7 @@ function renderCurso(curso) {
                 
                 <p class="titulo_flyer">${curso.titulo}</p>
                 <p class="docente_flyer">${curso.docente}</p>
-                <div class="fechas_flyer_container">
+                <div class="detalle_flyer_container">
                     <p class="detalle_flyer">Inicia ${curso.flyer_inicio}</p>
                     <p class="division_flyer">|</p>
                     <p class="detalle_flyer">${curso.flyer_horario}</p>
