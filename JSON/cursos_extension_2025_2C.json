@@ -20,7 +20,7 @@
     },
     {
         "n":2,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"\u00bfC\u00f3mo se cocina una naci\u00f3n?",
         "subtitulo":"Una historia social de la comida en Argentina.",
@@ -58,7 +58,7 @@
     },
     {
         "n":4,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Tecnomancia: entre la narraci\u00f3n y la performance",
         "subtitulo":null,
@@ -77,7 +77,7 @@
     },
     {
         "n":5,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Introducci\u00f3n a la Historia del Pensamiento Latinoamericano",
         "subtitulo":null,
