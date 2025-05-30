@@ -87,6 +87,14 @@ function renderCurso(curso) {
                     <img src="https://seube.filo.uba.ar/sites/seube.filo.uba.ar/files/banner-humanidades.jpg" alt="Humanidades en Curso" />
                 </div>
                 
+                <div class="info_overlay" onclick="window.location.href='${curso.url}'">
+                    <p>+INFO</p>
+                </div>
+                
+                <a class="info_overlay" href="${curso.url}" target="_blank" rel="noopener noreferrer">
+                    <p>+INFO</p>
+                </a>
+                
                 <p class="titulo_flyer">${curso.titulo}</p>
                 ${curso.subtitulo ? `<p class="subtitulo_flyer">${curso.subtitulo}</p>` : ''}
                 <p class="docente_flyer">${curso.docente}</p>
