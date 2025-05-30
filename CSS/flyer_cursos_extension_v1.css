@@ -1,3 +1,15 @@
+.cuatri_title {
+	background-color: #659c44;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding: 12px 20px;
+	position: relative;
+	display: block;
+	font-size: 22px;
+	font-family: 'Droid Serif';
+	color: #ffffff;
+}
+
 #bloque_cursos {
     display: flex;
     flex-direction: row;
