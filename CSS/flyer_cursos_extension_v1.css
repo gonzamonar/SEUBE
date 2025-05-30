@@ -10,6 +10,12 @@
 	color: #ffffff;
 }
 
+.info_overlay {
+    text-decoration: none;
+    color: white;
+    /* rest of the styles... */
+}
+
 #bloque_cursos {
     display: flex;
     flex-direction: row;
@@ -63,18 +69,10 @@
     width: 60px;
 }
 
+
 .titulo_flyer {
     color: white;
     font-size: 21px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.subtitulo_flyer {
-    color: white;
-    font-size: 15px;
     font-weight: bold;
     text-align: center;
     margin: 0;
