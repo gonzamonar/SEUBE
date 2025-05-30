@@ -161,17 +161,16 @@
 .status-stripe {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 100%;
+    right: -50px;
+    width: 300px;
     height: 50px;
     background-color: rgba(255, 0, 0, 0.8); /* Red color for "Inscripción Abierta" */
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 50%, 50% 0);
     color: white;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotate(45deg);
+    transform: rotate(35deg);
     z-index: 10;
 }
 
@@ -180,7 +179,7 @@
 }
 
 .status-text {
-    transform: rotate(-45deg);  /* Correct the text orientation */
-    font-size: 0.9rem;
+    font-size: 10px;
     text-transform: uppercase;
+    padding-left: 80px;
 }
