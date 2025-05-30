@@ -84,7 +84,7 @@ function renderCurso(curso) {
             <div class="marco">&nbsp;</div>
 
 	    <div class="status-stripe ${isOpen ? 'open' : 'closed'}">
-                <span class="status-text">${isOpen ? 'Inscripción Abierta' : 'Inscripción Cerrada'}</span>
+                <span class="status-text">${isOpen ? 'Inscripción<br>Abierta' : 'Inscripción<br>Cerrada'}</span>
             </div>
 
             <div class="content-container">
