@@ -77,10 +77,15 @@ function ParseJson(json){
 
 function renderCurso(curso) {
     const modalidad = curso.modalidad.charAt(0).toUpperCase() + curso.modalidad.slice(1);
-
+    const isOpen = curso.inscripcion_abierta;
+	
     return `
         <div class="flyer_container" style="background-image: url('${curso.flyer_imagen}');">
             <div class="marco">&nbsp;</div>
+
+	    <div class="status-stripe ${isOpen ? 'open' : 'closed'}">
+                <span class="status-text">${isOpen ? 'Inscripción Abierta' : 'Inscripción Cerrada'}</span>
+            </div>
 
             <div class="content-container">
                 <div class="banner-img-container">
