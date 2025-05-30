@@ -1,3 +1,4 @@
+
 .cuatri_title {
 	background-color: #cb5e91;
 	margin-top: 0px;
@@ -11,9 +12,26 @@
 }
 
 .info_overlay {
-    text-decoration: none;
-    color: white;
-    /* rest of the styles... */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.flyer_container:hover .info_overlay {
+    opacity: 1;
 }
 
 #bloque_cursos {
@@ -26,6 +44,8 @@
 }
 
 .flyer_container {
+    position: relative;
+    overflow: hidden;
     width: 320px;
     height: 400px;
     background-color: #1c2955;
@@ -73,6 +93,15 @@
 .titulo_flyer {
     color: white;
     font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.subtitulo_flyer {
+    color: white;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
     margin: 0;
