@@ -34,7 +34,7 @@
     opacity: 1;
 }
 
-.overlay_info {
+.info_overlay p {
 	font-size: 40px;
 	color: #cb5e91;
 	background: rgba(0,0,0,0.8);
