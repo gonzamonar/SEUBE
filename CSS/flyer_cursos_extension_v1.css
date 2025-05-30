@@ -71,7 +71,7 @@
 .detalle_flyer_container {
     display: flex; 
     flex-direction: row; 
-    font-size: 16px; 
+    font-size: 15px; 
     gap: 5px;
 }
 
