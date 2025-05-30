@@ -14,11 +14,12 @@ export async function CargarCursos(url_json, id_container = "bloque_cursos"){
 }
 
 class Curso {
-	constructor(n, inscripcion, modalidad, titulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, programa, carga, arancel, link, presentacion) {
+	constructor(n, inscripcion, modalidad, titulo, subtitulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, programa, carga, arancel, link, presentacion) {
 		this.n = parseInt(n);
 		this.inscripcion = inscripcion;
 		this.modalidad = modalidad;
 		this.titulo = titulo;
+		this.subtitulo = subtitulo;
 		this.docente = docente;
 		this.flyer_inicio = flyer_inicio;
 		this.inicio = inicio;
@@ -67,7 +68,7 @@ function ParseJson(json){
     let items = [];
     json.forEach(e => {
             let item;
-            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.docente, e.flyer_inicio, e.inicio, e.fin, e.flyer_horario, e.horario, e.flyer_imagen, e.programa, e.carga, e.arancel, e.link, e.presentacion);
+            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.subtitulo, e.docente, e.flyer_inicio, e.inicio, e.fin, e.flyer_horario, e.horario, e.flyer_imagen, e.programa, e.carga, e.arancel, e.link, e.presentacion);
             items.push(item);
     });
     return items;
@@ -88,6 +89,7 @@ function renderCurso(curso) {
                 </div>
                 
                 <p class="titulo_flyer">${curso.titulo}</p>
+                <p class="subtitulo_flyer">${curso.subtitulo}</p>
                 <p class="docente_flyer">${curso.docente}</p>
                 <div class="detalle_flyer_container">
                     <p class="detalle_flyer">Inicia ${curso.flyer_inicio}</p>
@@ -104,4 +106,3 @@ function renderCurso(curso) {
         </div>
     `;
 }
-
