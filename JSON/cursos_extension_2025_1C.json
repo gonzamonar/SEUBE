@@ -61,7 +61,7 @@
     },
     {
         "n":9,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Introducci\u00f3n al chino cl\u00e1sico para humanidades\"",
         "docente":"Diaz, Mar\u00eda Elena<br>S\u00e1nchez Ord\u00f3\u00f1ez, Pilar",
@@ -151,7 +151,7 @@
     },
     {
         "n":19,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Dos caracterizaciones discrepantes de la filosof\u00eda: como actividad conceptual para explicar el mundo y como b\u00fasqueda radical por el sentido del ser. De Kant y Deleuze-Guattari a Heidegger y Jaspers\"",
         "docente":"D'Atri Guillermo Ariel",
@@ -316,7 +316,7 @@
     },
     {
         "n":34,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Cine y Migraciones. Contexto hist\u00f3rico y lenguaje cinematogr\u00e1fico.\"",
         "docente":"Galante Miguel Alberto<br>Marcelo Guillermo Haber",
@@ -346,7 +346,7 @@
     },
     {
         "n":37,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Curso \"Mundo, muerte y angustia. Existencialismo heideggeriano.\"",
         "docente":"Diaz Minuto, Delfina<br>Gorosito, Ulises",
