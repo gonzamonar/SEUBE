@@ -30,7 +30,7 @@ export async function CargarPagina(url_json, id_container = "renderer"){
 }
 
 class Curso {
-	constructor(n, inscripcion, modalidad, titulo, subtitulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, programa, carga, arancel, url, link_inscripcion, presentacion) {
+	constructor(n, inscripcion, modalidad, titulo, subtitulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, programa, carga, arancel, url_pagina, link_inscripcion, presentacion) {
 		this.n = parseInt(n);
 		this.inscripcion = inscripcion;
 		this.modalidad = modalidad;
@@ -46,7 +46,7 @@ class Curso {
 		this.programa = programa;
 		this.carga = carga;
 		this.arancel = arancel;
-		this.url = url;
+		this.url = url_pagina;
 		this.link_inscripcion = link_inscripcion;
 		this.presentacion = presentacion;
 	}
@@ -85,7 +85,7 @@ function ParseJson(json){
     let items = [];
     json.forEach(e => {
             let item;
-            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.subtitulo, e.docente, e.flyer_inicio, e.inicio, e.fin, e.flyer_horario, e.horario, e.flyer_imagen, e.programa, e.carga, e.arancel, e.url, e.link_inscripcion, e.presentacion);
+            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.subtitulo, e.docente, e.flyer_inicio, e.inicio, e.fin, e.flyer_horario, e.horario, e.flyer_imagen, e.programa, e.carga, e.arancel, e.url_pagina, e.link_inscripcion, e.presentacion);
             items.push(item);
     });
     return items;
