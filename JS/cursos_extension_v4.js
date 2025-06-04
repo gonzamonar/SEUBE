@@ -46,7 +46,7 @@ class Curso {
 		this.programa = programa;
 		this.carga = carga;
 		this.arancel = arancel;
-		this.url = url_pagina;
+		this.url_pagina = url_pagina;
 		this.link_inscripcion = link_inscripcion;
 		this.presentacion = presentacion;
 	}
@@ -110,7 +110,7 @@ function renderCurso(curso) {
                     <img src="https://seube.filo.uba.ar/sites/seube.filo.uba.ar/files/banner-humanidades.jpg" alt="Humanidades en Curso" />
                 </div>
                 
-                <a class="info_overlay" href="${curso.url}" target="_blank" rel="noopener noreferrer">
+                <a class="info_overlay" href="${curso.url_pagina}" target="_blank" rel="noopener noreferrer">
                     <p>+INFO</p>
                 </a>
                 
