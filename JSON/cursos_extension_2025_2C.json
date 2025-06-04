@@ -21,7 +21,7 @@
     },
     {
         "n":2,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"\u00bfC\u00f3mo se cocina una naci\u00f3n?",
         "subtitulo":"Una historia social de la comida en Argentina.",
@@ -61,7 +61,7 @@
     },
     {
         "n":4,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Tecnomancia: entre la narraci\u00f3n y la performance",
         "subtitulo":null,
@@ -81,7 +81,7 @@
     },
     {
         "n":5,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Introducci\u00f3n a la Historia del Pensamiento Latinoamericano",
         "subtitulo":null,
@@ -101,7 +101,7 @@
     },
     {
         "n":6,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Educaci\u00f3n Sexual Integral",
         "subtitulo":"desde una perspectiva intercultural y antirracista.",
@@ -161,7 +161,7 @@
     },
     {
         "n":9,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Introducci\u00f3n al chino cl\u00e1sico para humanidades",
         "subtitulo":null,
@@ -241,7 +241,7 @@
     },
     {
         "n":13,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Bases para la direcci\u00f3n de coros vocacionales",
         "subtitulo":null,
@@ -281,7 +281,7 @@
     },
     {
         "n":15,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Morfolog\u00eda del mito ",
         "subtitulo":null,
@@ -341,7 +341,7 @@
     },
     {
         "n":18,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"El g\u00e9nero de terror en las aulas",
         "subtitulo":null,
@@ -361,7 +361,7 @@
     },
     {
         "n":19,
-        "inscripcion":"abierta",
+        "inscripcion":"cerrada",
         "modalidad":"virtual",
         "titulo":"Dos caracterizaciones discrepantes de la filosof\u00eda:",
         "subtitulo":"como actividad conceptual y como b\u00fasqueda radical",
