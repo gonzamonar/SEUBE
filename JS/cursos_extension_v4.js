@@ -30,7 +30,7 @@ export async function CargarPagina(url_json, id_container = "renderer"){
 }
 
 class Curso {
-	constructor(n, inscripcion, modalidad, titulo, subtitulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, programa, carga, arancel, link, presentacion) {
+	constructor(n, inscripcion, modalidad, titulo, subtitulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, programa, carga, arancel, url, link_inscripcion, presentacion) {
 		this.n = parseInt(n);
 		this.inscripcion = inscripcion;
 		this.modalidad = modalidad;
@@ -46,7 +46,8 @@ class Curso {
 		this.programa = programa;
 		this.carga = carga;
 		this.arancel = arancel;
-		this.link = link;
+		this.url = url;
+		this.link_inscripcion = link_inscripcion;
 		this.presentacion = presentacion;
 	}
 
@@ -84,7 +85,7 @@ function ParseJson(json){
     let items = [];
     json.forEach(e => {
             let item;
-            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.subtitulo, e.docente, e.flyer_inicio, e.inicio, e.fin, e.flyer_horario, e.horario, e.flyer_imagen, e.programa, e.carga, e.arancel, e.link, e.presentacion);
+            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.subtitulo, e.docente, e.flyer_inicio, e.inicio, e.fin, e.flyer_horario, e.horario, e.flyer_imagen, e.programa, e.carga, e.arancel, e.url, e.link_inscripcion, e.presentacion);
             items.push(item);
     });
     return items;
@@ -138,7 +139,7 @@ function renderPagina(curso) {
     const isOpen = curso.inscripcion.toLowerCase() == "abierta";
     const inscription_btn = isOpen
 	  ? `
-	      <p><a class="inscr_btn" href="${curso.link}" target="_blank">Inscribirse</a></p>
+	      <p><a class="inscr_btn" href="${curso.link_inscripcion}" target="_blank">Inscribirse</a></p>
 	    `
 	  : `
 	      <p class="closed_msg">Inscripción Cerrada</p>
