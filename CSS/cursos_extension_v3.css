@@ -125,15 +125,17 @@
 }
 
 .btn_container {
-	margin-left: 38%;
-	margin-top: 55px;
 	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
 }
 
 .closed_msg {
     	background-color: #404040;
     	color: white;
-    	width: 60%;
+    	width: 200px;
     	font-size: 15px;
     	text-align: center;
     	padding: 10px 5px;
