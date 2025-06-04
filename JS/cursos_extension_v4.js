@@ -12,6 +12,18 @@ export async function CargarCursos(url_json, id_container = "bloque_cursos"){
     });
 }
 
+export async function CargarPagina(url_json, id_container = "renderer"){
+	let json_file = await FetchDataAsync(url_json);
+	let cursos = ParseJson(json_file);
+   	
+   	const container = $(id_container);
+   	const curso = parseInt(container.className);
+   	if (curso) {
+        container.innerHTML = "";
+        container.innerHTML += renderPagina(curso);
+   	}
+}
+
 class Curso {
 	constructor(n, inscripcion, modalidad, titulo, subtitulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, programa, carga, arancel, link, presentacion) {
 		this.n = parseInt(n);
@@ -74,7 +86,6 @@ function ParseJson(json){
 }
 
 
-
 function renderCurso(curso) {
     const modalidad = curso.modalidad.charAt(0).toUpperCase() + curso.modalidad.slice(1);
     const isOpen = curso.inscripcion == "abierta";
@@ -115,3 +126,85 @@ function renderCurso(curso) {
     `;
 }
 
+
+function renderPagina(curso) {
+    const modalidad = curso.modalidad.charAt(0).toUpperCase() + curso.modalidad.slice(1);
+    const inscripcion = curso.inscripcion.toUpperCase();
+	
+    return `
+        <div class="course_heading ${inscripcion == "ABIERTA" ? "abierta" : "cerrada"}">
+            <div class="title-container">
+                <p class="course_info">Curso N°${curso.n}<span class="course_info_slash">|</span> INSCRIPCIÓN ${inscripcion}</p>
+                <p class="course_title">${curso.titulo + " " + curso.subtitulo}</p>
+            </div>
+            <div class="plus-container">
+                <img draggable="false" class="img_plus reploy">
+            </div>
+        </div>
+        
+        <div class="course_content">
+        
+            <div class="left_column">
+                <div class="fieldtag">
+                    <div class="course_number">CURSO Nº${curso.n}</div>
+                </div>
+            
+                <div class="fieldtag">
+                    <div class="fieldtitle">DOCENTE</div>
+                    <div class="fieldcontent">${curso.docente}</div>
+                </div>
+                
+                <div class="fieldtag">
+                    <div class="fieldtitle">FECHA DE INICIO</div>
+                    <div class="fieldcontent">${curso.inicio}</div>
+                </div>
+                
+                <div class="fieldtag">
+                    <div class="fieldtitle">FECHA DE FINALIZACIÓN</div>
+                    <div class="fieldcontent">${curso.fin}</div>
+                </div>
+                
+                <div class="fieldtag">
+                    <div class="fieldtitle">MODALIDAD</div>
+                    <div class="fieldcontent">${modalidad}</div>
+                </div>
+                                
+                <div class="fieldtag">
+                    <div class="fieldtitle">DÍA Y HORARIO</div>
+                    <div class="fieldcontent">${curso.horario}</div>
+                </div>
+                
+                <div class="fieldtag">
+                    <div class="fieldtitle">PROGRAMA</div>
+                    <div class="fieldcontent">
+                        <img src="/sites/seube.filo.uba.ar/files/u4/thumb_PDF.png" alt="PDF" width="25" height="25">
+                        &nbsp; 
+                        <a style="color: #d00e0b;" href="${curso.programa}" target="_blank">
+                            Programa
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="fieldtag">
+                    <div class="fieldtitle">CARGA HORARIA</div>
+                    <div class="fieldcontent">${curso.carga}</div>
+                </div>
+                
+                <div class="fieldtag">
+                    <div class="fieldtitle">ARANCEL</div>
+                    <div class="fieldcontent">${curso.arancel}</div>
+                </div>
+            </div>
+                
+            <div class="right_column">
+                <div class="fieldtag">
+                    <div class="fieldtitle field16">PRESENTACIÓN</div>
+                    <div class="presentation">${curso.presentacion}</div>
+                </div>
+                <div class="btn_container">
+                    <p><a class="inscr_btn" href="${curso.link}" target="_blank">Inscribirse</a></p>
+                </div>
+            </div>
+        </div>
+    `;
+}
