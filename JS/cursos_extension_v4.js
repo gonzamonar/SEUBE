@@ -138,7 +138,7 @@ function renderPagina(curso) {
     const inscripcion = curso.inscripcion.toUpperCase();
 	
     return `
-        <div class="course_heading ${inscripcion == "ABIERTA" ? "abierta" : "cerrada"}">
+        <div class="course_heading ${inscripcion == "CERRADA" ? "cerrada" : curso.modalidad.toLowerCase()}">
             <div class="title-container">
                 <p class="course_info">Curso N°${curso.n}<span class="course_info_slash">|</span> INSCRIPCIÓN ${inscripcion}</p>
                 <p class="course_title">${curso.titulo + " " + curso.subtitulo}</p>
