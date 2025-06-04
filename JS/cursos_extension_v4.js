@@ -21,6 +21,7 @@ export async function CargarPagina(url_json, id_container = "renderer"){
    	const container = $(id_container);
 	if (container) {
 	   	const curso = parseInt(container.className);
+		console.log(curso);
 	   	if (curso) {
 		        container.innerHTML = "";
 		        container.innerHTML += renderPagina(curso);
@@ -91,6 +92,7 @@ function ParseJson(json){
 
 
 function renderCurso(curso) {
+	console.log(curso);
     const modalidad = curso.modalidad.charAt(0).toUpperCase() + curso.modalidad.slice(1);
     const isOpen = curso.inscripcion == "abierta";
 	
