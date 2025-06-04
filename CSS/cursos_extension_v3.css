@@ -40,7 +40,15 @@
 }
 
 .course_title {
-	font-size: 20px;
+	font-size: 22px;
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 4px;
+	width: 600px;
+}
+
+.course_subtitle {
+	font-size: 18px;
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 4px;
