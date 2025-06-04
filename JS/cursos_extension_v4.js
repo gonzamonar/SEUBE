@@ -141,7 +141,8 @@ function renderPagina(curso) {
         <div class="course_heading ${inscripcion == "CERRADA" ? "cerrada" : ""}">
             <div class="title-container">
                 <p class="course_info">Curso N°${curso.n}<span class="course_info_slash">|</span> INSCRIPCIÓN ${inscripcion}</p>
-                <p class="course_title">${curso.titulo + " " + curso.subtitulo}</p>
+                <p class="course_title">${curso.titulo}</p>
+		<p class="course_subtitle">${curso.subtitulo}</p>
             </div>
         </div>
         
