@@ -20,11 +20,11 @@ export async function CargarPagina(url_json, id_container = "renderer"){
    	
    	const container = $(id_container);
 	if (container) {
-	   	const curso = parseInt(container.className);
-		console.log(curso);
-	   	if (curso) {
+	   	const numCurso = parseInt(container.className);
+		let cursos_filtrados = cursos.filter((c) => { return c.n == numCurso });
+		if (cursos_filtrados.length > 0) {
 		        container.innerHTML = "";
-		        container.innerHTML += renderPagina(curso);
+		        container.innerHTML += renderPagina(cursos_filtrados[0]);
 	   	}
 	}
 }
