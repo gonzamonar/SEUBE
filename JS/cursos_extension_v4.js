@@ -138,13 +138,10 @@ function renderPagina(curso) {
     const inscripcion = curso.inscripcion.toUpperCase();
 	
     return `
-        <div class="course_heading ${inscripcion == "CERRADA" ? "cerrada" : curso.modalidad.toLowerCase()}">
+        <div class="course_heading ${inscripcion == "CERRADA" ? "cerrada" : ""}">
             <div class="title-container">
                 <p class="course_info">Curso N°${curso.n}<span class="course_info_slash">|</span> INSCRIPCIÓN ${inscripcion}</p>
                 <p class="course_title">${curso.titulo + " " + curso.subtitulo}</p>
-            </div>
-            <div class="plus-container">
-                <img draggable="false" class="img_plus reploy">
             </div>
         </div>
         
@@ -185,9 +182,7 @@ function renderPagina(curso) {
                     <div class="fieldcontent">
                         <img src="/sites/seube.filo.uba.ar/files/u4/thumb_PDF.png" alt="PDF" width="25" height="25">
                         &nbsp; 
-                        <a style="color: #d00e0b;" href="${curso.programa}" target="_blank">
-                            Programa
-                        </a>
+                        <a style="color: #d00e0b;" href="${curso.programa}" target="_blank">Programa</a>
                     </div>
                 </div>
                 
