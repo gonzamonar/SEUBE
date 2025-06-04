@@ -141,7 +141,7 @@ function renderPagina(curso) {
 	      <p><a class="inscr_btn" href="${curso.link}" target="_blank">Inscribirse</a></p>
 	    `
 	  : `
-	      <p>Inscripción Cerrada</p>
+	      <p class="closed_msg">Inscripción Cerrada</p>
 	    `;
 	
     return `
