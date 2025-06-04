@@ -139,7 +139,7 @@ function renderPagina(curso) {
     const isOpen = curso.inscripcion.toLowerCase() == "abierta";
     const inscription_btn = isOpen
 	  ? `
-	      <p><a class="inscr_btn" href="${curso.link_inscripcion}" target="_blank">Inscribirse</a></p>
+	      <p class="inscr_p"><a class="inscr_btn" href="${curso.link_inscripcion}" target="_blank">Inscribirse</a></p>
 	    `
 	  : `
 	      <p class="closed_msg">Inscripción Cerrada</p>
