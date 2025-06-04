@@ -5,11 +5,13 @@ export async function CargarCursos(url_json, id_container = "bloque_cursos"){
 	let cursos = ParseJson(json_file);
    	
    	const container = $(id_container);   	
-   	container.innerHTML = "";
-
-    cursos.forEach(curso => {
-        container.innerHTML += renderCurso(curso);
-    });
+	if (container) {
+	   	container.innerHTML = "";
+	
+	    cursos.forEach(curso => {
+	        container.innerHTML += renderCurso(curso);
+	    });
+	}
 }
 
 export async function CargarPagina(url_json, id_container = "renderer"){
@@ -17,11 +19,13 @@ export async function CargarPagina(url_json, id_container = "renderer"){
 	let cursos = ParseJson(json_file);
    	
    	const container = $(id_container);
-   	const curso = parseInt(container.className);
-   	if (curso) {
-        container.innerHTML = "";
-        container.innerHTML += renderPagina(curso);
-   	}
+	if (container) {
+	   	const curso = parseInt(container.className);
+	   	if (curso) {
+		        container.innerHTML = "";
+		        container.innerHTML += renderPagina(curso);
+	   	}
+	}
 }
 
 class Curso {
