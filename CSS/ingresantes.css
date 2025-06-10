@@ -1,8 +1,11 @@
 
+p, ul {
+    margin: 0;
+}
+
 .content {
     background-color: white;
     font-family: 'Bitter';
-    margin: 0;
 }
 
 .underlined {
