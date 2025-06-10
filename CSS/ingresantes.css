@@ -1,4 +1,45 @@
 
 .content {
     background-color: white;
+    font-family: 'Bitter';
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    align-items:center;
+    background-color:#404040;
+    border-radius:5px;
+    color:white;
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    padding:10px 20px;
+    width:fit-content;
+}
+
+.text-container {
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.text-container:first-child {
+    font-weight: bold;
+}
+
+.text-container p {
+    margin: 0;
+}
+
+.arrow {
+    align-items:center;
+    display:flex;
+    justify-content:center;
+    margin:0;
 }
