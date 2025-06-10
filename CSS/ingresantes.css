@@ -140,4 +140,10 @@ h2 {
     margin-left: 30px;
 }
 
+.subtitle {
+    color: #1f2654;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
