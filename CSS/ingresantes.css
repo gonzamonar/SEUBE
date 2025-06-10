@@ -4,6 +4,10 @@
     font-family: 'Bitter';
 }
 
+.underlined {
+    text-decoration: underlined;
+}
+
 .title {
     color: #1f2654;
     text-align: center;
