@@ -127,5 +127,8 @@
     display: flex;
     flex-direction: column;
     text-align: justify;
-    gap: 15px;
+    gap: 10px;
+    margin-left: 30px;
 }
+
+
