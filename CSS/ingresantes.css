@@ -12,6 +12,15 @@
     font-weight: bold;
 }
 
+.selectable {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectable p {
+    margin: 0;
+}
+
 /* VOLVER BTN */
 #return-btn {
     display: flex;
