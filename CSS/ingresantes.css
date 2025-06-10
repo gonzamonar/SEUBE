@@ -12,6 +12,15 @@
     font-weight: bold;
 }
 
+h2 {
+    text-align: center;
+    background-color: #1f2654;
+    margin-top: 10px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 .selectable {
     display: flex;
     flex-direction: column;
