@@ -115,7 +115,7 @@ h2 {
 
 /* ITEMS */
 .item {
-  max-height: 0;
+  max-height: 0px;
   opacity: 0;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
@@ -124,11 +124,24 @@ h2 {
 }
 
 .item.active {
-  max-height: auto;
+  max-height: fit-content;
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
 }
+
+.hidden-left {
+    transform: translateX(-1000px);
+}
+
+.hidden-right {
+    transform: translateX(1000px);
+}
+
+.shown {
+    transform: translateX(0);
+}
+
 
 /* ITEMS CONTENT */
 .step {
@@ -189,16 +202,3 @@ h2 {
     font-size:22px;
     cursor: pointer;
 }
-
-.hidden-left {
-    transform: translateX(-1000px);
-}
-
-.hidden-right {
-    transform: translateX(1000px);
-}
-
-.shown {
-    transform: translateX(0);
-}
-
