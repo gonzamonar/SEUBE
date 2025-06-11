@@ -123,7 +123,7 @@ h2 {
   pointer-events: none;
 }
 
-.item-left {
+.item-from-left {
   transform: translateX(-1000px);
 }
 
