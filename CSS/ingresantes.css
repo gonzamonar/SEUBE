@@ -119,8 +119,12 @@ h2 {
   opacity: 0;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  transform: translateX(-1000px);
+  transform: translateX(1000px);
   pointer-events: none;
+}
+
+.item-left {
+  transform: translateX(-1000px);
 }
 
 .item.active {
