@@ -171,4 +171,18 @@ h2 {
     font-weight: bold;
     width: 100%;
     font-size:22px;
+    cursor: pointer;
 }
+
+.hidden-left {
+    transform: translateX(200%);
+}
+
+.hidden-right {
+    transform: translateX(-200%);
+}
+
+.shown {
+    transform: translateX(0);
+}
+
