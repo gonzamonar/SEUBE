@@ -168,15 +168,6 @@ h2 {
     border-radius: 5px;
     border: 1px solid #1f2654;
     font-weight: bold;
-}
-
-h3 {
-    background-color: #ffa600;
-    border-style:none;
-    color: #1f2654;
-    display:block;
+    width: 100%;
     font-size:22px;
-    font-weight: bold;
-    line-height:1.1;
-    padding:12px 20px;
 }
