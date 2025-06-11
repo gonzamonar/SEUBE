@@ -175,11 +175,11 @@ h2 {
 }
 
 .hidden-left {
-    transform: translateX(200%);
+    transform: translateX(-1000px);
 }
 
 .hidden-right {
-    transform: translateX(-200%);
+    transform: translateX(1000px);
 }
 
 .shown {
