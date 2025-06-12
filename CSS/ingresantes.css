@@ -177,6 +177,18 @@ h2 {
     user-select: none; /* Standard syntax */
 }
 
+.step-item {
+    background-color: #49bfaa;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
 .step-text {
     font-size: 20px;
     color: #1f2654;
