@@ -219,3 +219,39 @@ h2 {
     padding: 10px 0px 10px 50px;
 }
 
+
+
+/* VERSION 2 */
+
+.query {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.query-prompt {
+    font-size: 25px;
+    text-align: center;
+    color: #1f2654;
+    font-weight: bold;
+    margin: 0;
+}
+
+.query-option-container {    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.query-option {
+    margin: 0;
+    background-color: #49bfaa;
+    color: black;
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;    
+}
+
