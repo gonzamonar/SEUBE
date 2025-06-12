@@ -114,6 +114,7 @@ h2 {
 
 .option:hover {
     background-color: #1f2654;
+    border: 2px solid #1f2654;
     cursor: pointer;
 }
 
