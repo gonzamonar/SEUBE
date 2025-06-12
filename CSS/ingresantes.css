@@ -261,6 +261,7 @@ h2 {
     border-radius: 20px;
     font-size: 20px;
     font-weight: bold;
+    transition: all 0.4s ease-in-out;
 }
 
 .query-option:hover {
@@ -291,21 +292,21 @@ h2 {
 /* animation scale-up-center */
 @-webkit-keyframes scale-up-center {
   0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 @keyframes scale-up-center {
   0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
