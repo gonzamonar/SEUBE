@@ -268,3 +268,11 @@ h2 {
     background-color: transparent;
 }
 
+.skip-query {
+    text-align: center;
+    color: grey;
+    font-style: italic;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 20px 0px;
+}
