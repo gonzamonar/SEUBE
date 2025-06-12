@@ -33,12 +33,13 @@ p, ul {
 }
 
 .fechas-msg {
-    background-color: #1f2654;
-    color: white;
+    background-color: #ffa600;
+    color: #1f2654;
     padding: 5px 10px;
     border-radius: 1px;
     width: fit-content;
     text-align: center;
+    font-weight: bold;
 }
 
 h2 {
