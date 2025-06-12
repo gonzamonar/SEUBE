@@ -236,7 +236,10 @@ h2 {
 }
 
 .container-plan-de-estudios {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .btn-plan-de-estudios {
