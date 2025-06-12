@@ -120,6 +120,7 @@ h2 {
 
 .option-inverted:hover {
     background-color: #49bfaa;
+    border: 2px solid #49bfaa;
     cursor: pointer;
     color: #fafafa;
 }
