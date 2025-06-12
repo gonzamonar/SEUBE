@@ -203,6 +203,11 @@ h2 {
     border: 1px solid #1f2654;
     font-weight: bold;
     width: 100%;
-    font-size:22px;
+    font-size:24px;
     cursor: pointer;
 }
+
+.materias-recomendadas ul {
+    padding: 10px 0px 10px 50px;
+}
+
