@@ -148,6 +148,10 @@ h2 {
     font-size: 22px;
 }
 
+.container-info-graduados li {
+    padding: 10px 5px;
+}
+
 /* ITEMS */
 .item {
   max-height: 0px;
