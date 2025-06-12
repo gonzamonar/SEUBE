@@ -203,6 +203,19 @@ h2 {
     margin-bottom: 30px;
 }
 
+.container-plan-de-estudios {
+    flex-direction: column;
+}
+
+.btn-plan-de-estudios {
+    background-color: #49bfaa;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
 .subtitle {
     color: #1f2654;
     font-size: 17px;
