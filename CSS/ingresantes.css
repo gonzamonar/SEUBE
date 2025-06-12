@@ -223,6 +223,12 @@ h2 {
 
 /* VERSION 2 */
 
+.queries-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .query {
     display: flex;
     flex-direction: column;
@@ -243,15 +249,22 @@ h2 {
     gap: 20px;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .query-option {
     margin: 0;
+    border: 1px solid #49bfaa;
     background-color: #49bfaa;
     color: black;
     padding: 20px 30px;
     border-radius: 20px;
     font-size: 20px;
-    font-weight: bold;    
+    font-weight: bold;
+}
+
+.query-option:hover {
+    cursor: pointer;
+    background-color: transparent;
 }
 
