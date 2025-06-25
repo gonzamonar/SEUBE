@@ -198,6 +198,7 @@ h2 {
 
 /* ITEMS */
 .item {
+  font-family: 'Bitter';
   max-height: 0px;
   opacity: 0;
   overflow: hidden;
