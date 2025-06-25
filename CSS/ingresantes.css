@@ -3,6 +3,10 @@ p, ul {
     margin: 0;
 }
 
+h3 {
+    padding-top: 25px;
+}
+
 .content {
     background-color: white;
     font-family: 'Bitter';
