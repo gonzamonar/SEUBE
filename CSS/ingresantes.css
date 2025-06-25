@@ -14,9 +14,8 @@ p, ul {
 
 .bienvenida-title {
     color: #1f2654;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
-    text-decoration: underline;
     font-weight: bold;
     padding-top: 10px;
 }
