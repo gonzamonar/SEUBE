@@ -73,7 +73,7 @@
     bottom: 0; 
     background-image: url('https://seube.filo.uba.ar/sites/seube.filo.uba.ar/files/marco.jpg'); 
     background-repeat: no-repeat; 
-    background-size: contain; 
+    background-size: 100% 100%; 
     background-position: center;
 }
 
