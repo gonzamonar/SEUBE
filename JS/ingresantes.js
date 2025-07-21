@@ -43,5 +43,5 @@ function showAsignatures() {
   $(selectedCarrera).style.display = "flex";
 }
 
-//hidebyclass("primero");
+hidebyclass("primero");
 hidebyclass("materias-recomendadas");
