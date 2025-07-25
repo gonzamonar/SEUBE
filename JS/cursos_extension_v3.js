@@ -1,15 +1,27 @@
+/*
+JS EMPLEADO EN
+https://seube.filo.uba.ar/humanidades-en-curso-cursos-de-extensi%C3%B3n-primer-cuatrimestre-2025
+
+MEDIANTE HOJA https://docs.google.com/spreadsheets/d/1a2XMnq8PCqOA3C10dPnvP4H_UMv3HI1XWXi2LX6Paf0
+*/
+
 const YEAR = new Date().getFullYear();
 
-
-export async function CargarCursos(url_json, id_container = "bloque_cursos"){
-	let json_file = await FetchDataAsync(url_json);
-	let cursos = ParseJson(json_file);
-	
-	CreateFilters(id_container);
-	
-	cursos.forEach(curso => {
-		DrawCourse(curso, id_container);
-   	});
+export async function CargarCursos(id_container = "bloque_cursos"){
+	const SHEET_ID = "1LetNREjwvCX7j4k91MZ-XxGNCuXed_HZ_YpV8CBuhzs";
+	const container = $(id_container);
+	if (container) {
+	   	const sheetName = parseInt(container.className);
+		const RANGE = sheetName + "!A1:Z200";
+		let data = await FetchDataAsync(SHEET_ID, RANGE);
+		let cursos = ParseData(data);
+		
+		CreateFilters(id_container);
+		
+		cursos.forEach(curso => {
+			DrawCourse(curso, id_container);
+		});
+	}
 }
 
 class Curso {
@@ -40,10 +52,17 @@ class Curso {
 }
 
 
-async function FetchDataAsync(url) {
-    const response = await fetch(url);
-    let jsonArray = await response.json();
-    return jsonArray;
+async function FetchDataAsync(SHEET_ID, RANGE) {
+	const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=AIzaSyBBoP_GWjNK5YCtGXg4GojI_PjTeyGH-eM`)
+	.then((res) => res.json())
+	.then((data) => {
+		const [headers, ...rows] = data.values;
+		const parsed = rows.map(row =>
+			Object.fromEntries(headers.map((key, i) => [key, row[i] || ""]))
+		);
+		return parsed;
+	});
+    return response;
 }
 
 
@@ -59,9 +78,9 @@ function ToggleClass(element, classname){
 }
 
 
-function ParseJson(json){
+function ParseData(data){
     let items = [];
-    json.forEach(e => {
+    data.forEach(e => {
             let item;
             item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.docente, e.inicio, e.fin, e.horario, e.programa, e.carga, e.arancel, e.link, e.presentacion);
             items.push(item);
