@@ -13,7 +13,6 @@ export async function CargarCursos(id_container = "bloque_cursos"){
 	if (container) {
 	   	const sheetName = container.className;
 		const RANGE = sheetName + "!A1:Z200";
-		console.log(RANGE);
 		let data = await FetchDataAsync(SHEET_ID, RANGE);
 		let cursos = ParseData(data);
 		
