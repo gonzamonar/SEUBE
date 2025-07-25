@@ -8,7 +8,7 @@ MEDIANTE HOJA https://docs.google.com/spreadsheets/d/1a2XMnq8PCqOA3C10dPnvP4H_UM
 const YEAR = new Date().getFullYear();
 
 export async function CargarCursos(id_container = "bloque_cursos"){
-	const SHEET_ID = "1LetNREjwvCX7j4k91MZ-XxGNCuXed_HZ_YpV8CBuhzs";
+	const SHEET_ID = "1a2XMnq8PCqOA3C10dPnvP4H_UMv3HI1XWXi2LX6Paf0";
 	const container = $(id_container);
 	if (container) {
 	   	const sheetName = container.className;
