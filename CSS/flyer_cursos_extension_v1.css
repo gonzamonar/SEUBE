@@ -132,7 +132,7 @@
 	font-size: 15px; 
 	width: 100%;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	text-align: center;
 }
 
@@ -143,9 +143,11 @@
 }
 
 .division_flyer {
-    color: #439caa;
-    margin: 0;
-    padding: 0;
+	border-left: 1px solid #439caa;
+	margin: 0;
+	padding: 0;
+	width: 1px;
+	height: 75%;
 }
 
 .logo_uba_container {
