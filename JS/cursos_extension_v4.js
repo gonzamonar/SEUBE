@@ -31,8 +31,11 @@ export async function CargarPagina(id_container = "renderer"){
 	if (container) {
 		const SHEET_ID = "1a2XMnq8PCqOA3C10dPnvP4H_UMv3HI1XWXi2LX6Paf0";
 		const classes = container.className.split(" ");
+		console.log(classes);
 		const sheetName = classes[0];
+		console.log(sheetName);
 	   	const numCurso = parseInt(classes[1]);
+		console.log(numCurso);
 		const RANGE = sheetName + "!A1:Z200";
 		let data = await FetchDataAsync(SHEET_ID, RANGE);
 		let cursos_filtrados = cursos.filter((c) => { return c.n == numCurso });
