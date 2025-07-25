@@ -20,14 +20,17 @@ export async function CargarCursos(id_container = "bloque_cursos"){
 		CreateFilters(id_container);
 		
 		cursos.forEach(curso => {
-			DrawCourse(curso, id_container);
+			if (curso.visible == "SI") {
+				DrawCourse(curso, id_container);
+			}
 		});
 	}
 }
 
 class Curso {
-	constructor(n, inscripcion, modalidad, titulo, docente, inicio, fin, horario, programa, carga, arancel, link, presentacion) {
+	constructor(n, visible, inscripcion, modalidad, titulo, docente, inicio, fin, horario, programa, carga, arancel, link, presentacion) {
 		this.n = parseInt(n);
+		this.visible = visible;
 		this.inscripcion = inscripcion;
 		this.modalidad = modalidad;
 		this.titulo = titulo;
@@ -83,7 +86,7 @@ function ParseData(data){
     let items = [];
     data.forEach(e => {
             let item;
-            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.docente, e.inicio, e.fin, e.horario, e.programa, e.carga, e.arancel, e.link, e.presentacion);
+            item = new Curso(e.n, e.visible, e.inscripcion, e.modalidad, e.titulo, e.docente, e.inicio, e.fin, e.horario, e.programa, e.carga, e.arancel, e.link, e.presentacion);
             items.push(item);
     });
     return items;
