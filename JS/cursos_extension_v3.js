@@ -11,8 +11,9 @@ export async function CargarCursos(id_container = "bloque_cursos"){
 	const SHEET_ID = "1LetNREjwvCX7j4k91MZ-XxGNCuXed_HZ_YpV8CBuhzs";
 	const container = $(id_container);
 	if (container) {
-	   	const sheetName = parseInt(container.className);
+	   	const sheetName = container.className;
 		const RANGE = sheetName + "!A1:Z200";
+		console.log(RANGE);
 		let data = await FetchDataAsync(SHEET_ID, RANGE);
 		let cursos = ParseData(data);
 		
