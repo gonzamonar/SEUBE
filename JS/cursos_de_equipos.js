@@ -8,6 +8,7 @@ export async function CargarCursos(id_container="bloque_cursos"){
 	const SHEET_ID = "1LetNREjwvCX7j4k91MZ-XxGNCuXed_HZ_YpV8CBuhzs";
 	const RANGE = "Listado!A1:Z100";
 	let data = await FetchDataAsync(SHEET_ID, RANGE);
+	console.log(data);
 	let cursos = ParseData(data);
 	console.log(cursos);
 	
@@ -45,6 +46,7 @@ async function FetchDataAsync(SHEET_ID, RANGE) {
 	const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=AIzaSyBBoP_GWjNK5YCtGXg4GojI_PjTeyGH-eM`)
 	.then((res) => res.json())
 	.then((data) => {
+		console.log(data);
 		const [headers, ...rows] = data.values;
 		const parsed = rows.map(row =>
 			Object.fromEntries(headers.map((key, i) => [key, row[i] || ""]))
