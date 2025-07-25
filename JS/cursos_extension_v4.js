@@ -1,26 +1,40 @@
+/*
+JS EMPLEADO EN
+https://seube.filo.uba.ar/prueba-cursos
+
+MEDIANTE HOJA https://docs.google.com/spreadsheets/d/1a2XMnq8PCqOA3C10dPnvP4H_UMv3HI1XWXi2LX6Paf0
+*/
+
+
 const YEAR = new Date().getFullYear();
 
-export async function CargarCursos(url_json, id_container = "bloque_cursos"){
-	let json_file = await FetchDataAsync(url_json);
-	let cursos = ParseJson(json_file);
-   	
+export async function CargarCursos(id_container = "bloque_cursos"){   	
    	const container = $(id_container);   	
 	if (container) {
-	   	container.innerHTML = "";
-	
-	    cursos.forEach(curso => {
-	        container.innerHTML += renderCurso(curso);
-	    });
+		const SHEET_ID = "1a2XMnq8PCqOA3C10dPnvP4H_UMv3HI1XWXi2LX6Paf0";
+		const sheetName = container.className;
+		const RANGE = sheetName + "!A1:Z200";
+		let data = await FetchDataAsync(SHEET_ID, RANGE);
+		let cursos = ParseData(data);
+		container.innerHTML = "";
+	    	cursos.forEach(curso => {
+		    if (curso.visible == "SI") {
+			container.innerHTML += renderCurso(curso);
+		    }
+	    	});
 	}
 }
 
-export async function CargarPagina(url_json, id_container = "renderer"){
-	let json_file = await FetchDataAsync(url_json);
-	let cursos = ParseJson(json_file);
-   	
+export async function CargarPagina(id_container = "renderer"){
+	const SHEET_ID = "1a2XMnq8PCqOA3C10dPnvP4H_UMv3HI1XWXi2LX6Paf0";   	
    	const container = $(id_container);
 	if (container) {
-	   	const numCurso = parseInt(container.className);
+		const SHEET_ID = "1a2XMnq8PCqOA3C10dPnvP4H_UMv3HI1XWXi2LX6Paf0";
+		const classes = container.className.split(" ");
+		const sheetName = classes[0];
+	   	const numCurso = parseInt(classes[1]);
+		const RANGE = sheetName + "!A1:Z200";
+		let data = await FetchDataAsync(SHEET_ID, RANGE);
 		let cursos_filtrados = cursos.filter((c) => { return c.n == numCurso });
 		if (cursos_filtrados.length > 0) {
 		        container.innerHTML = "";
@@ -30,8 +44,9 @@ export async function CargarPagina(url_json, id_container = "renderer"){
 }
 
 class Curso {
-	constructor(n, inscripcion, modalidad, titulo, subtitulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, programa, carga, arancel, url_pagina, link_inscripcion, presentacion) {
+	constructor(n, visible, inscripcion, modalidad, titulo, subtitulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, programa, carga, arancel, url_pagina, link_inscripcion, presentacion) {
 		this.n = parseInt(n);
+		this.visible = visible;
 		this.inscripcion = inscripcion;
 		this.modalidad = modalidad;
 		this.titulo = titulo;
@@ -62,10 +77,17 @@ class Curso {
 }
 
 
-async function FetchDataAsync(url) {
-    const response = await fetch(url);
-    let jsonArray = await response.json();
-    return jsonArray;
+async function FetchDataAsync(SHEET_ID, RANGE) {
+	const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=AIzaSyBBoP_GWjNK5YCtGXg4GojI_PjTeyGH-eM`)
+	.then((res) => res.json())
+	.then((data) => {
+		const [headers, ...rows] = data.values;
+		const parsed = rows.map(row =>
+			Object.fromEntries(headers.map((key, i) => [key, row[i] || ""]))
+		);
+		return parsed;
+	});
+    return response;
 }
 
 
@@ -81,11 +103,11 @@ function ToggleClass(element, classname){
 }
 
 
-function ParseJson(json){
+function ParseData(data){
     let items = [];
-    json.forEach(e => {
+    data.forEach(e => {
             let item;
-            item = new Curso(e.n, e.inscripcion, e.modalidad, e.titulo, e.subtitulo, e.docente, e.flyer_inicio, e.inicio, e.fin, e.flyer_horario, e.horario, e.flyer_imagen, e.programa, e.carga, e.arancel, e.url_pagina, e.link_inscripcion, e.presentacion);
+            item = new Curso(e.n, e.visible, e.inscripcion, e.modalidad, e.titulo, e.subtitulo, e.docente, e.flyer_inicio, e.inicio, e.fin, e.flyer_horario, e.horario, e.flyer_imagen, e.programa, e.carga, e.arancel, e.url_pagina, e.link_inscripcion, e.presentacion);
             items.push(item);
     });
     return items;
@@ -93,7 +115,6 @@ function ParseJson(json){
 
 
 function renderCurso(curso) {
-	console.log(curso);
     const modalidad = curso.modalidad.charAt(0).toUpperCase() + curso.modalidad.slice(1);
     const isOpen = curso.inscripcion == "abierta";
 	
