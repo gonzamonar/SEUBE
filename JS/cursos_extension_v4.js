@@ -141,9 +141,9 @@ function renderCurso(curso) {
                 <p class="docente_flyer">${curso.docente}</p>
                 <div class="detalle_flyer_container">
                     <p class="detalle_flyer">Inicia ${curso.flyer_inicio}</p>
-                    <p class="division_flyer">|</p>
+                    <p class="division_flyer"></p>
                     <p class="detalle_flyer">${curso.flyer_horario}</p>
-                    <p class="division_flyer">|</p>
+                    <p class="division_flyer"></p>
                     <p class="detalle_flyer">${modalidad}</p>
                 </div>
                 
