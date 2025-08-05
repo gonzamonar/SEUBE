@@ -116,7 +116,7 @@ function ParseData(data){
 
 
 function renderCurso(curso) {
-    const modalidad = curso.modalidad.charAt(0).toUpperCase() + curso.modalidad.slice(1);
+    let modalidad = curso.modalidad.charAt(0).toUpperCase() + curso.modalidad.slice(1);
     modalidad = modalidad.replace(" ", "<br>");
     const isOpen = curso.inscripcion == "abierta";
     const horario = curso.flyer_horario == "Asincrónico" ? "" :
