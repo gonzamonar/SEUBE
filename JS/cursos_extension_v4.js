@@ -117,8 +117,11 @@ function ParseData(data){
 
 function renderCurso(curso) {
     const modalidad = curso.modalidad.charAt(0).toUpperCase() + curso.modalidad.slice(1);
+    modalidad.replace(" ", "<br>");
     const isOpen = curso.inscripcion == "abierta";
-	
+    const horario = curso.flyer_horario == "Asincrónico" ? "" :
+		`<p class="division_flyer"></p> <p class="detalle_flyer">${curso.flyer_horario}</p>"`
+
     return `
         <div class="flyer_container" style="background-image: url('${curso.flyer_imagen}');">
             <div class="marco">&nbsp;</div>
@@ -140,9 +143,8 @@ function renderCurso(curso) {
                 ${curso.subtitulo ? `<p class="subtitulo_flyer">${curso.subtitulo}</p>` : ''}
                 <p class="docente_flyer">${curso.docente}</p>
                 <div class="detalle_flyer_container">
-                    <p class="detalle_flyer">Inicia ${curso.flyer_inicio}</p>
-                    <p class="division_flyer"></p>
-                    <p class="detalle_flyer">${curso.flyer_horario}</p>
+                    <p class="detalle_flyer">Inicia<br>${curso.flyer_inicio}</p>
+                    ${horario}
                     <p class="division_flyer"></p>
                     <p class="detalle_flyer">${modalidad}</p>
                 </div>
