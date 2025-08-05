@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 
 .page_title {
 	background-color: #cb5e91;
@@ -101,6 +102,7 @@
 
 
 .titulo_flyer {
+    font-family: "Bitter", serif;
     color: white;
     font-size: 21px;
     font-weight: bold;
@@ -110,6 +112,7 @@
 }
 
 .subtitulo_flyer {
+    font-family: "Bitter", serif;
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -119,6 +122,7 @@
 }
 
 .docente_flyer {
+    font-family: "Bitter", serif;
     color: white;
     font-size: 16px;
     margin: 15px 0px 5px 0px;
@@ -137,6 +141,7 @@
 }
 
 .detalle_flyer {
+    font-family: "Bitter", serif;
     color: white;
     margin: 0;
     padding: 0;
@@ -184,6 +189,7 @@
 }
 
 .status-text {
+    font-family: "Bitter", serif;
     font-size: 12px;
     text-transform: uppercase;
     padding-left: 100px;
