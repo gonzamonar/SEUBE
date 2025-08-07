@@ -45,7 +45,7 @@ export async function CargarPagina(id_container = "renderer"){
 }
 
 class Curso {
-	constructor(n, visible, inscripcion, modalidad, titulo, subtitulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, programa, carga, arancel, url_pagina, link_inscripcion, presentacion) {
+	constructor(n, visible, inscripcion, modalidad, titulo, subtitulo, docente, flyer_inicio, inicio, fin, flyer_horario, horario, flyer_imagen, opacity, programa, carga, arancel, url_pagina, link_inscripcion, presentacion) {
 		this.n = parseInt(n);
 		this.visible = visible;
 		this.inscripcion = inscripcion;
@@ -59,6 +59,7 @@ class Curso {
 		this.flyer_horario = flyer_horario;
 		this.horario = horario;
 		this.flyer_imagen = flyer_imagen;
+		this.opacity = opacity;
 		this.programa = programa;
 		this.carga = carga;
 		this.arancel = arancel;
@@ -108,7 +109,7 @@ function ParseData(data){
     let items = [];
     data.forEach(e => {
             let item;
-            item = new Curso(e.n, e.visible, e.inscripcion, e.modalidad, e.titulo, e.subtitulo, e.docente, e.flyer_inicio, e.inicio, e.fin, e.flyer_horario, e.horario, e.flyer_imagen, e.programa, e.carga, e.arancel, e.url_pagina, e.link_inscripcion, e.presentacion);
+            item = new Curso(e.n, e.visible, e.inscripcion, e.modalidad, e.titulo, e.subtitulo, e.docente, e.flyer_inicio, e.inicio, e.fin, e.flyer_horario, e.horario, e.flyer_imagen, e.opacity, e.programa, e.carga, e.arancel, e.url_pagina, e.link_inscripcion, e.presentacion);
             items.push(item);
     });
     return items;
@@ -123,7 +124,7 @@ function renderCurso(curso) {
 		`<p class="division_flyer"></p> <p class="detalle_flyer">${curso.flyer_horario.replace(' ', '<br>')}</p>`
 
     return `
-        <div class="flyer_container" style="background-image: url('${curso.flyer_imagen}');">
+        <div class="flyer_container" style="background-image: linear-gradient(rgba(0,0,0,${curso.opacity}), rgba(0,0,0,${curso.opacity})), url('${curso.flyer_imagen}');">
             <div class="marco">&nbsp;</div>
 
 	    <div class="status-stripe ${isOpen ? 'open' : 'closed'}">
