@@ -35,11 +35,15 @@
     opacity: 1;
 }
 
+.flyer_container:hover .content-container {
+    opacity: 0;
+}
+
 .info_overlay p {
 	font-family: "Bitter", serif;
 	font-size: 40px;
 	color: #48c0aa;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,1);
 	border-radius: 5px;
 	padding: 5px 15px;
 }
