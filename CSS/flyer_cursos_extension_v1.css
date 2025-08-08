@@ -33,7 +33,7 @@
 
 .flyer_container:hover .info_overlay,
 .flyer_container:hover .img-fondo {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .flyer_container:hover .titulo_flyer,
