@@ -31,14 +31,16 @@
 	opacity: 0;
 }
 
-.flyer_container:hover .info_overlay {
+.flyer_container:hover .info_overlay,
+.flyer_container:hover .img-fondo {
     opacity: 1;
 }
 
 .flyer_container:hover .titulo_flyer,
 .flyer_container:hover .subtitulo_flyer,
 .flyer_container:hover .docente_flyer,
-.flyer_container:hover .detalle_flyer_container {
+.flyer_container:hover .detalle_flyer_container,
+.flyer_container:hover .logo_uba_container {
     opacity: 0;
 }
 
