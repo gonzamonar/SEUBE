@@ -21,7 +21,7 @@
     background-color: rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
@@ -31,26 +31,15 @@
 	opacity: 0;
 }
 
-.flyer_container:hover .info_overlay,
-.flyer_container:hover .img-fondo {
-    opacity: 1 !important;
-}
-
-.flyer_container:hover .titulo_flyer,
-.flyer_container:hover .subtitulo_flyer,
-.flyer_container:hover .docente_flyer,
-.flyer_container:hover .detalle_flyer_container,
-.flyer_container:hover .logo_uba_container {
-    opacity: 0;
-}
-
 .info_overlay p {
 	font-family: "Bitter", serif;
 	font-size: 40px;
 	color: #48c0aa;
-	background: rgba(0,0,0,1);
+	background: #1c2955;
 	border-radius: 5px;
 	padding: 5px 15px;
+	width: 100%;
+	text-align: center;
 }
 
 #bloque_cursos {
@@ -75,6 +64,19 @@
     align-items: center; 
     position: relative;
 	transition: all 0.3s ease-in-out;
+}
+
+.flyer_container:hover .info_overlay,
+.flyer_container:hover .img-fondo {
+    opacity: 1 !important;
+}
+
+.flyer_container:hover .titulo_flyer,
+.flyer_container:hover .subtitulo_flyer,
+.flyer_container:hover .docente_flyer,
+.flyer_container:hover .detalle_flyer_container,
+.flyer_container:hover .logo_uba_container {
+    opacity: 0;
 }
 
 .marco {
@@ -103,6 +105,7 @@
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
+	transition: all 0.4s ease;
 }
 
 .content-container {
