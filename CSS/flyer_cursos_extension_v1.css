@@ -28,13 +28,14 @@
     transition: opacity 0.3s ease;
     cursor: pointer;
     z-index: 5;
+	opacity: 0;
 }
 
-.flyer_container:hover .info_overlay p {
+.flyer_container:hover .info_overlay {
     opacity: 1;
 }
 
-.flyer_container:hover .content-container {
+.flyer_container:hover .titulo_flyer, .subtitulo_flyer, .detalle_flyer_container {
     opacity: 0;
 }
 
