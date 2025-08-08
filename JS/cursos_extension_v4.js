@@ -124,8 +124,11 @@ function renderCurso(curso) {
 		`<p class="division_flyer"></p> <p class="detalle_flyer">${curso.flyer_horario.replace(' ', '<br>')}</p>`
 
     return `
-        <div class="flyer_container" style="background-image: linear-gradient(rgba(0,0,0,${curso.opacity}), rgba(0,0,0,${curso.opacity})), url('${curso.flyer_imagen}');">
+        <div class="flyer_container">
             <div class="marco">&nbsp;</div>
+			<div class="fondo">
+   				<img class="img-fondo" style="opacity: ${curso.opacity}" src="${curso.flyer_imagen}"/>
+   			</div>
 
 	    <div class="status-stripe ${isOpen ? 'open' : 'closed'}">
                 <span class="status-text">${isOpen ? 'Inscripción<br>Abierta' : 'Inscripción<br>Cerrada'}</span>
