@@ -25,13 +25,12 @@
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
-    opacity: 0;
     transition: opacity 0.3s ease;
     cursor: pointer;
     z-index: 5;
 }
 
-.flyer_container:hover .info_overlay, .info_overlay p {
+.flyer_container:hover .info_overlay p {
     opacity: 1;
 }
 
@@ -46,7 +45,7 @@
 	background: rgba(0,0,0,1);
 	border-radius: 5px;
 	padding: 5px 15px;
-	opacity: 1 !important;
+	opacity: 0;
 }
 
 #bloque_cursos {
