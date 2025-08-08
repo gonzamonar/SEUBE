@@ -31,7 +31,7 @@
     z-index: 5;
 }
 
-.flyer_container:hover .info_overlay {
+.flyer_container:hover .info_overlay p {
     opacity: 1;
 }
 
