@@ -29,15 +29,15 @@ class Curso {
 	constructor(n, visible, carrera, carrera_tabla, titulo, aula, fecha, horario, link, presentacion, programa) {
 		this.n = parseInt(n);
 		this.visible = visible;
-		this.inscripcion = carrera;
-		this.modalidad = carrera_tabla;
+		this.carrera = carrera;
+		this.carrera_tabla = carrera_tabla;
 		this.titulo = titulo;
-		this.subtitulo = aula;
-		this.docente = fecha;
-		this.flyer_inicio = horario;
-		this.inicio = link;
-		this.fin = presentacion;
-		this.flyer_horario = programa;
+		this.aula = aula;
+		this.fecha = fecha;
+		this.horario = horario;
+		this.link = link;
+		this.presentacion = presentacion;
+		this.programa = programa;
 	}
 }
 
