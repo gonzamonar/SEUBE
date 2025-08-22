@@ -103,7 +103,7 @@ function renderCurso(curso) {
                     Presentación
                 </span>
                 <br />
-                <td>${curso.presentacion}</td>
+                <span>${curso.presentacion}</span>
                 </td>
             </tr>
             </tbody>
