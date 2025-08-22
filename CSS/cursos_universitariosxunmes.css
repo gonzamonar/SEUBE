@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap');
+
+/* GENERAL */
+body {
+    font-family: 'Source Sans Pro', 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+a {
+    color: #ff0000;
+}
+
+.selector {
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #659c44;
+    background-image: url('none');
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.1;
+    font-weight: 500;
+    padding: 12px 20px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.selector:hover {
+    transition: all 0.5s ease-in-out;
+    opacity: 0.82;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(41, 51, 113);
+}
+
+.selectable {
+    display: none;
+}
+
+.selected {
+    display: block;
+}
+
+/* TABLE */
+table {
+    color: #404040;
+    border: 1px solid #404040;
+    border-collapse: collapse;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    font-size: 15px !important;
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    background-color: #cc3057;
+    color: #fff;
+    border: 1px solid #404040;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td {
+    border: 1px solid #404040;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.td-presentacion {
+    text-align: justify;
+    padding: 10px 15px 25px 15px;
+}
+
+.title-presentacion {
+    color: #cc3057;
+    font-weight: 500; text-decoration: underline;
+}
