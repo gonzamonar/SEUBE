@@ -11,22 +11,21 @@ a {
 
 .selector {
     transition: all 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     opacity: 1;
     border-radius: 5px;
-    color: #ffffff;
     background-color: #659c44;
     background-image: url('none');
     color: #fff;
     font-size: 22px;
-    line-height: 1.1;
-    font-weight: 500;
+    line-height: 1.1; 
+    font-weight: 500; 
     padding: 12px 20px;
-    border: none;
+    display: block; 
+    border: none; 
     box-sizing: border-box;
+    margin-block-start: 0.83em; 
+    margin-block-end: 0.83em; 
+    border-top-color: #54554F;
 }
 
 .selector:hover {
