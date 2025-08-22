@@ -6,13 +6,16 @@ MEDIANTE HOJA https://docs.google.com/spreadsheets/d/1TVQyNkzs4rjrWu1Hcu5WSmL-a-
 */
 
 export async function CargarCursos(id_container = "bloque_cursos"){   	
-   	const container = $(id_container);   	
+   	const container = $(id_container);
+	console.log(container);
 	if (container) {
 		const SHEET_ID = "1TVQyNkzs4rjrWu1Hcu5WSmL-a-DARj2zHuKtoYqSd5E";
 		const sheetName = container.className;
 		const RANGE = sheetName + "!A1:Z200";
 		let data = await FetchDataAsync(SHEET_ID, RANGE);
+		console.log(data);
 		let cursos = ParseData(data);
+		console.log(cursos);
 		container.innerHTML = "";
 	    	cursos.forEach(curso => {
                 if (curso.visible == "SI") {
