@@ -77,7 +77,7 @@ function ParseData(data){
 
 function renderCurso(curso) {
     return `
-        <div class="selector selector-${curso.n}">
+        <div id="selector-${curso.n}" class="selector">
             <strong>${curso.carrera}</strong> | ${curso.titulo}
         </div>
         <div id="${curso.n}" class="selectable">
@@ -135,7 +135,9 @@ function deactivateSelectors(){
 
 function addListenerToSelector(n){
     const selector = $("selector-" + n);
-	selector.addEventListener('click', (e) => {
-		select(n, selector);
-	});
+	if (selector) {
+		selector.addEventListener('click', (e) => {
+			select(n, selector);
+		});
+	}
 }
