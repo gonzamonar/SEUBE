@@ -76,9 +76,9 @@ function ParseData(data){
 
 function renderCurso(curso) {
     return `
-        <h2 class="selector" onclick="select('${curso.n}', this);">
+        <div class="selector" onclick="select('${curso.n}', this);">
             <strong>${curso.carrera}</strong> | ${curso.titulo}
-        </h2>
+        </div>
         <div id="${curso.n}" class="selectable">
         <table>
             <tbody>
