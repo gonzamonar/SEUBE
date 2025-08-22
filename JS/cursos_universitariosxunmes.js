@@ -17,7 +17,7 @@ export async function CargarCursos(id_container = "bloque_cursos"){
 	    	cursos.forEach(curso => {
                 if (curso.visible == "SI") {
                     container.innerHTML += renderCurso(curso);
-					//addListenerToSelector(curso.n);
+					addListenerToSelector(curso.n);
                 }
 	    	});
 	}
@@ -77,7 +77,7 @@ function ParseData(data){
 
 function renderCurso(curso) {
     return `
-        <div class="selector selector-${curso.n}" onclick="selectItem('${curso.n}', this);">
+        <div class="selector selector-${curso.n}">
             <strong>${curso.carrera}</strong> | ${curso.titulo}
         </div>
         <div id="${curso.n}" class="selectable">
@@ -112,7 +112,7 @@ function renderCurso(curso) {
     `;
 }
 
-function selectItem(id, selector) {
+function select(id, selector) {
     unselectAll();
     deactivateSelectors();
     selector.classList.add("active");
