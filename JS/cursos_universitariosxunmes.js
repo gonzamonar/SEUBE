@@ -17,7 +17,7 @@ export async function CargarCursos(id_container = "bloque_cursos"){
 	    	cursos.forEach(curso => {
                 if (curso.visible == "SI") {
                     container.innerHTML += renderCurso(curso);
-					addListenerToSelector(curso.n);
+					//addListenerToSelector(curso.n);
                 }
 	    	});
 	}
