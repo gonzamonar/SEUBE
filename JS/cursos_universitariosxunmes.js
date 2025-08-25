@@ -121,6 +121,7 @@ function select(id, selector) {
 
 function unselectAll(){
     const elements = document.getElementsByClassName("selectable");
+	console.log(elements);
     elements.forEach((e) => {
         e.classList.remove("selected");
     })
@@ -128,6 +129,7 @@ function unselectAll(){
 
 function deactivateSelectors(){
     const elements = document.getElementsByClassName("selector");
+	console.log(elements);
     elements.forEach((e) => {
         e.classList.remove("active");
     })
