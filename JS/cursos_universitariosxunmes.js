@@ -143,7 +143,6 @@ function addListenerToSelector(n){
 	if (selector) {
 		selector.addEventListener('click', (e) => {
 			select("item-" + n, selector);
-			console.log("CLICKED selector-" + n);
 		});
 	}
 }
