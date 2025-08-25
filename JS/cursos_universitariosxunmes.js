@@ -14,12 +14,17 @@ export async function CargarCursos(id_container = "bloque_cursos"){
 		let data = await FetchDataAsync(SHEET_ID, RANGE);
 		let cursos = ParseData(data);
 		container.innerHTML = "";
-	    	cursos.forEach(curso => {
-                if (curso.visible == "SI") {
-                    container.innerHTML += renderCurso(curso);
-					addListenerToSelector(curso.n);
-                }
-	    	});
+		cursos.forEach(curso => {
+			if (curso.visible == "SI") {
+				container.innerHTML += renderCurso(curso);
+			}
+		});
+
+		cursos.forEach(curso => {
+			if (curso.visible == "SI") {
+				addListenerToSelector(curso.n);
+			}
+		});
 	}
 }
 
@@ -135,10 +140,10 @@ function deactivateSelectors(){
 
 function addListenerToSelector(n){
     const selector = $("selector-" + n);
-	console.log(selector);
 	if (selector) {
 		selector.addEventListener('click', (e) => {
 			select("item-" + n, selector);
+			console.log("CLICKED selector-" + n);
 		});
 	}
 }
