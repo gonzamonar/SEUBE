@@ -80,7 +80,7 @@ function renderCurso(curso) {
         <div id="selector-${curso.n}" class="selector">
             <strong>${curso.carrera}</strong> | ${curso.titulo}
         </div>
-        <div id="${curso.n}" class="selectable">
+        <div id="item-${curso.n}" class="selectable">
         <table>
             <tbody>
             <tr>
@@ -135,9 +135,10 @@ function deactivateSelectors(){
 
 function addListenerToSelector(n){
     const selector = $("selector-" + n);
+	console.log(selector);
 	if (selector) {
 		selector.addEventListener('click', (e) => {
-			select(n, selector);
+			select("item-" + n, selector);
 		});
 	}
 }
