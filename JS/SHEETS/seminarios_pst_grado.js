@@ -22,10 +22,9 @@ export async function CargarCursos(id_container="bloque_cursos"){
 }
 
 class Curso {
-	constructor(n, visible, inscripcion, titulo, fecha_inscripcion, cursada, lugar, docentes, equipo_docente, programa, carreras, presentacion) {
+	constructor(n, visible, titulo, fecha_inscripcion, cursada, lugar, docentes, equipo_docente, programa, carreras, presentacion) {
 		this.n = parseInt(n);
-    this.visible = visible;
-    this.inscripcion = inscripcion;
+    	this.visible = visible;
 		this.titulo = titulo;
 		this.fecha_inscripcion = fecha_inscripcion;
 		this.cursada = cursada;
