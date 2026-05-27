@@ -101,7 +101,7 @@ function renderTrayecto(container, data) {
 	  data.duracion_sem ?
 	  	`<p>
 	      <strong class="trayecto-label">
-	        Duración:
+	        Duración de cada seminario:
 	      </strong>
 	
 	      ${data.duracion_sem}
