@@ -10,6 +10,17 @@ async function CargarTrayectos() {
 	});
 }
 
+export async function CargarTrayectos(id_container = "bloque_trayecto"){   	
+   	const container = $(id_container);   	
+	if (container) {
+		loadTrayecto(container);
+	}
+}
+
+function $(id){
+	return document.getElementById(id);
+}
+
 async function loadTrayecto(container) {
   const sourceId = container.dataset.source;
 
