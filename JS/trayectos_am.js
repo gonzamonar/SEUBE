@@ -16,8 +16,7 @@ async function loadTrayecto(container) {
   const SHEET_ID = "18iDq_BQcnNRgVoAw2aGfkOBTpK_fOqNdNBE4U3gJpWw";
   const RANGE = "trayectos!A1:Z200";
   const response = await FetchDataAsync(SHEET_ID, RANGE);
-  const rows = await response.json();
-  const data = rows.find(r => r.id === sourceId);
+  const data = response.find(r => r.id === sourceId);
 
   if (!data) {
     container.innerHTML = "<p>No se encontró información.</p>";
