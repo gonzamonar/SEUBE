@@ -97,6 +97,17 @@ function renderTrayecto(container, data) {
       `
       : "";
 
+  const duracionSeminario =
+	  data.duracion_sem ?
+	  	`<p>
+	      <strong class="trayecto-label">
+	        Duración:
+	      </strong>
+	
+	      ${data.duracion_sem}
+    	</p>` : '';
+	  
+
   container.innerHTML = `
   
     ${estadoHTML}
@@ -106,7 +117,7 @@ function renderTrayecto(container, data) {
     </p>
 
     <p>
-      Los seminarios que componen la Cohorte 2026 son:
+      Los seminarios que componen la Cohorte ${data.cohorte} son:
     </p>
 
     ${seminarListHTML}
@@ -169,6 +180,8 @@ function renderTrayecto(container, data) {
       ${data.duracion}
     </p>
 
+	${duracionSeminario}
+
     <p>
       <strong class="trayecto-label">
         Inicio de la cursada:
@@ -212,7 +225,7 @@ function renderTrayecto(container, data) {
         ? `
 		  <p>&nbsp;</p>
           <p>
-            Para pre-inscribirte a la cohorte completar este
+            Para pre-inscribirte a la cohorte ${data.cohorte} completar este
             <a
               href="${data.formulario_url}"
               target="_blank">
