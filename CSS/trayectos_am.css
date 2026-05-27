@@ -1,0 +1,47 @@
+.trayecto-estado {
+  width: 100%;
+}
+
+.trayecto-estado p {
+  font-size: 30px;
+  text-align: center;
+  color: #404040;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+.trayecto-estado.abierta p {
+  color: #1c8c3a;
+}
+
+.trayecto-label {
+  color: #0098d4;
+}
+
+.trayecto-bullet,
+.trayecto-indented {
+  padding-left: 30px;
+}
+
+.trayecto-dot,
+.trayecto-bullet span {
+  color: #db4e53;
+}
+
+.trayecto-programa {
+  color: #d43c00;
+}
+
+.trayecto-seminario {
+  margin-top: 40px;
+}
+
+.trayecto-seminario h3 {
+  color: #0098d4;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.trayecto-docente {
+  font-weight: bold;
+}
