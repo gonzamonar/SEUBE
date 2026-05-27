@@ -48,11 +48,7 @@ function renderTrayecto(container, data) {
           <p>INSCRIPCIÓN CERRADA</p>
         </div>
       `
-      : `
-        <div class="trayecto-estado abierta">
-          <p>INSCRIPCIÓN ABIERTA</p>
-        </div>
-      `;
+      : '';
 
   const seminarTitles = [
     data.sem1_titulo,
@@ -69,47 +65,23 @@ function renderTrayecto(container, data) {
     `)
     .join("");
 
-  const detailedSeminarsHTML = [
-    {
-      titulo: data.sem1_titulo,
-      docente: data.sem1_docente,
-      descripcion: data.sem1_desc
-    },
-    {
-      titulo: data.sem2_titulo,
-      docente: data.sem2_docente,
-      descripcion: data.sem2_desc
-    },
-    {
-      titulo: data.sem3_titulo,
-      docente: data.sem3_docente,
-      descripcion: data.sem3_desc
-    },
-    {
-      titulo: data.sem4_titulo,
-      docente: data.sem4_docente,
-      descripcion: data.sem4_desc
-    }
-  ]
-  .filter(s => s.titulo)
-  .map((s, index) => `
+  const detailedSeminarsHTML = `
     <section class="trayecto-seminario">
 
       <h3>
-        ${index + 1}er Seminario: "${s.titulo}"
+        "${data.sem_activo_titulo}"
       </h3>
 
       <p class="trayecto-docente">
-        Docente: ${s.docente || ""}
+        Docente: ${data.sem_activo_docente || ""}
       </p>
 
       <p>
-        ${s.descripcion || ""}
+        ${data.sem_activo_desc || ""}
       </p>
 
     </section>
-  `)
-  .join("");
+  `;
 
   const formularioHTML =
     data.estado === "abierta"
