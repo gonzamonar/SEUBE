@@ -111,6 +111,8 @@ function renderTrayecto(container, data) {
 
     ${seminarListHTML}
 
+	<p>&nbsp;</p>
+	
     <p>
       <strong class="trayecto-label">
         Título:
@@ -120,15 +122,17 @@ function renderTrayecto(container, data) {
     </p>
 
     ${formularioHTML}
-
+	
     <p>
-      <a
+      <img style="color: #404040; font-weight: 400; text-align: start;" src="/sites/seube.filo.uba.ar/files/u4/thumb_PDF.png" alt="PDF" width="20" height="20">&nbsp;<a
         class="trayecto-programa"
         href="${data.programa_url}"
         target="_blank">
         <strong>Programa Completo</strong>
       </a>
     </p>
+
+	<p>&nbsp;</p>
 
     <p>
       <strong class="trayecto-label">
@@ -188,7 +192,7 @@ function renderTrayecto(container, data) {
     </p>
 
     <p class="trayecto-indented">
-      <a
+      <img style="color: #404040;" src="/sites/seube.filo.uba.ar/files/u4/thumb_Communication.png" alt="Email" width="20" height="20">&nbsp;<a
         href="mailto:${data.email}"
         target="_blank">
         <strong>${data.email}</strong>
@@ -196,7 +200,7 @@ function renderTrayecto(container, data) {
     </p>
 
     <p class="trayecto-indented">
-      <a
+      <img style="color: #404040;" src="/sites/seube.filo.uba.ar/files/u4/thumb_Communication.png" alt="Email" width="20" height="20">&nbsp;<a
         href="mailto:areaadultosmayores@filo.uba.ar"
         target="_blank">
         <strong>areaadultosmayores@filo.uba.ar</strong>
@@ -206,14 +210,16 @@ function renderTrayecto(container, data) {
     ${
       data.estado === "abierta"
         ? `
+		  <p>&nbsp;</p>
           <p>
-            Para pre-inscribirte a la cohorte 2026 completar este
+            Para pre-inscribirte a la cohorte completar este
             <a
               href="${data.formulario_url}"
               target="_blank">
               formulario
             </a>
           </p>
+		  <p>&nbsp;</p>
         `
         : ""
     }
