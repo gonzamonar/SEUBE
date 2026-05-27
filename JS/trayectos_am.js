@@ -1,15 +1,3 @@
-
-async function CargarTrayectos() {
-	document.addEventListener("DOMContentLoaded", () => {
-	
-	  const containers =
-	    document.querySelectorAll(".trayecto");
-	
-	  containers.forEach(loadTrayecto);
-	
-	});
-}
-
 export async function CargarTrayectos(id_container = "bloque_trayecto"){   	
    	const container = $(id_container);   	
 	if (container) {
