@@ -1,4 +1,15 @@
 
+async function CargarTrayectos() {
+	document.addEventListener("DOMContentLoaded", () => {
+	
+	  const containers =
+	    document.querySelectorAll(".trayecto");
+	
+	  containers.forEach(loadTrayecto);
+	
+	});
+}
+
 async function loadTrayecto(container) {
   const sourceId = container.dataset.source;
 
@@ -241,12 +252,3 @@ function renderTrayecto(container, data) {
 
   `;
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const containers =
-    document.querySelectorAll(".trayecto");
-
-  containers.forEach(loadTrayecto);
-
-});
